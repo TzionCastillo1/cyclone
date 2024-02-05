@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/tzion/Projects/cyclone/tools/unit-test-app/build/CMakeFiles/bootloader"
+		},
+		{
+			"file" : "/home/tzion/Projects/cyclone/tools/unit-test-app/build/CMakeFiles/bootloader.rule"
+		},
+		{
+			"file" : "/home/tzion/Projects/cyclone/tools/unit-test-app/build/CMakeFiles/bootloader-complete.rule"
+		},
+		{
+			"file" : "/home/tzion/Projects/cyclone/tools/unit-test-app/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+		},
+		{
+			"file" : "/home/tzion/Projects/cyclone/tools/unit-test-app/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+		},
+		{
+			"file" : "/home/tzion/Projects/cyclone/tools/unit-test-app/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+		},
+		{
+			"file" : "/home/tzion/Projects/cyclone/tools/unit-test-app/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+		},
+		{
+			"file" : "/home/tzion/Projects/cyclone/tools/unit-test-app/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+		},
+		{
+			"file" : "/home/tzion/Projects/cyclone/tools/unit-test-app/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+		},
+		{
+			"file" : "/home/tzion/Projects/cyclone/tools/unit-test-app/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"bootloader"
+		],
+		"name" : "bootloader"
+	}
+}
