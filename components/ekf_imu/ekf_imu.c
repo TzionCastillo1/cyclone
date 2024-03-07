@@ -1,4 +1,5 @@
 #include "ekf_imu.h"
+#include <stdio.h>
 
 /* NOTE: The below matrices are square and are therefore only defined by one "size" value */
 
@@ -7,33 +8,84 @@
 #define H_HEIGHT 3
 #define H_WIDTH 7
 
-typedef struct
+
+void ekf_imu_init(const ekf_imu_config_t* ekf_imu_config, ekf_imu_filter_t* this)
 {
-	float R[9];
-	float Q[49];
-	float K[21];
-	float P_prediction[49];
-	float P_estimate[49];
-	float x_prediction[7];
-	float x_estimate[7];
+	this->R.HEIGHT = ekf_imu_config->R_init.HEIGHT;
+	this->R.WIDTH = ekf_imu_config->R_init.WIDTH;
+	mat_utils_copy(config->R_init, this->R);
 
-} ekf_imu_filter_t;
+	this->Q.HEIGHT = ekf_imu_config->Q_init.HEIGHT;
+	this->Q.WIDTH = ekf_imu_config->Q_init.WIDTH;
+	mat_utils_copy(config->Q_init, this->Q);
 
-ekf_imu_filter_t* ekf_imu_init(const ekf_imu_config_t* ekf_imu_config)
+	this->P.HEIGHT = ekf_imu_config->P_init.HEIGHT;
+	this->P.WIDTH = ekf_imu_config->P_init.WIDTH;
+	mat_utils_copy(config->P_init, this->P);
+
+	this->x.HEIGHT = ekf_imu_config->x_init.HEIGHT;
+	this->x.WIDTH = ekf_imu_config->x_init.WIDTH;
+	mat_utils_copy(config->x_init, this->x);
+
+}
+
+void ekf_imu_set_default_params(ekf_imu_config_t* config, const float R_INITIAL_DIAG, const float Q_INITIAL_DIAG, const float P_INITIAL_DIAG)
 {
-	ekf_imu_filter_t* ekf_imu_filter = {
-		.R = ekf_imu_config->R_init,
-		.Q = ekf_imu_config->Q_init,
-		.P_estimate = ekf_imu_config->P_init,
-		.x_estimate = ekf_imu_config->x_init
-	};
+	mat_utils_eye(config->R_init);
+	mat_utils_c_mult_scalar(config->R_init, R_INITIAL_DIAG);
 
-	return ekf_imu_filter;
+	mat_utils_eye(config->Q_init);
+	mat_utils_c_mult_scalar(config->Q_init, Q_INITIAL_DIAG);
+
+	mat_utils_eye(config->P_init);
+	mat_utils_eye(config->P_init, P_INITIAL_DIAG);
+}
+
+void ekf_imu_reset(const ekf_imu_config_t* config, ekf_imu_filter_t* this)
+{
+	ekf_imu_init(config, this);
+	mat_utils_zeros(this->K);
+}
+
+void ekf_imu_get_F(ekf_imu_filter_t* this,  matrixf_t* F, float gyro_rates[3], const float dt)
+{
+	float half_dt = dt/2;
+	float adj_rates[3] = {gyro_rates[0] - this->x[4], 
+								gyro_rates[1] - this->x[5], 
+								gyro_rates[2] - this->x[6]}; 
+
+	float F_tmp_raw[49] = {1, -half_dt*adj_rates[0], -half_dt*adj_rates[1], -half_dt*adj_rates[2], -(this->x[1]), -(this->x[2]), -(this->x[3],
+							half_dt*adj_rates[0], 1, half_dt*adj_rates[2], -half_dt*adj_rates[1], this->x[0], -(this->x[3]), this->x[2],
+							half_dt*adj_rates[1], -half_dt*adj_rates[2], 1, half_dt*adj_rates[0], this->x[3], this->x[0], -(this->x[1]),
+							half_dt*adj_rates[2], half_dt*adj_rates[1], -half_dt*adj_rates[0], 1, -(this->x[2]), this->x[1], this->x[0],
+							0, 0, 0, 0, 1, 0, 0,
+							0, 0, 0, 0, 0, 1, 0, 
+							0, 0, 0, 0, 0, 0, 1};
+	memcpy(F->mat, F_tmp_raw, 49); 	
+}
+
+
+void ekf_imu_predict_state(ekf_imu_filter_t* this)
+{
+}
+
+void ekf_imu_get_K_gain(ekf_imu_filter_t* this)
+{
+}
+
+void ekf_imu_filter_update_state(ekf_imu_filter_t* this)
+{
+}
+
+void ekd_imu_filter_update_P(ekf_imu_filter_t* this)
+{
 }
 
 /* NOTE: The gyro readings are in units of rad/s */
 void ekf_imu_predict(const float* gyro_readings, ekf_imu_filter_t* ekf_imu_filter, const float delta_t)
 {
+
+	ekf_imu_predict_P(this, gyro_readings);
 	float P_temp[P_SIZE*P_SIZE];
 
 	/* TODO: Provide the state function jacobian, F_x, for this function to use. Options include
@@ -123,8 +175,4 @@ void ekf_imu_update(const float* accel_readings, ekf_imu_filter_t* ekf_imu_filte
 	dspm_mult_f32_aes3(P_estimate_temp_2, P_prediction, P_estimate, P_SIZE, P_SIZE);
 }
 
-void ekf_imu_get_state(float* x_output, ekf_imu_filter_t* ekf_imu_filter)
-{
-	*x_output = ekf_imu_filter_params->x_estimate;
-}
 
