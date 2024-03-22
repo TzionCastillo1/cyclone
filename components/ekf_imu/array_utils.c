@@ -15,5 +15,5 @@ void array_utils_sub_f(const float* inA, const float* inB, float* dest, uint8_t 
 void array_utils_memcpy(float* in, float* dest, int length)
 {
 	for (int item = 0; item < length; item++)
-		in[item] = dest[item];
+		dest[item] = in[item];
 }

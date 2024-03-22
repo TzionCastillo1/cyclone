@@ -1,6 +1,7 @@
 #include <stdint.h>
 #include "unity.h"
 #include "mat_utils.h"
+#include "array_utils.h"
 
 void test_eye_provides_identity()
 {
@@ -50,6 +51,25 @@ void test_mat_utils_c_mult_scalar()
 	
 }
 
+void test_mat_utils_copy_block()
+{
+	float A_mat[9] = {1, 2, 3,
+					4, 5, 6,
+					7, 8, 9};
+	matrixf_t A = {.mat=A_mat, .HEIGHT=3, .WIDTH=3};
+
+	float B_mat[4] = {1, 2,
+					3, 4};
+	matrixf_t B = {.mat = B_mat, .HEIGHT=2, .WIDTH=2};
+
+	mat_utils_copy_block(&A, 1, 1, &B, 0, 0, 1, 1);
+
+	float C_mat[9] = {1, 2, 3,
+					4, 1, 2,
+					7, 3, 4};
+
+	TEST_ASSERT_EQUAL_FLOAT_ARRAY(C_mat, A.mat, 9);
+}
 
 void test_mat_utils_inverse()
 {
@@ -72,9 +92,10 @@ void test_mat_utils_skew_quat()
 {
 	float state[7] = {1, 0, 0, 0, .1, .1, .1};
 	float skew_quat_truth[12] = {0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1};
+	array_utils_mult_scalar_f(skew_quat_truth, skew_quat_truth, 1.0f/40.0f, 12);
 	float test_skew_quat[12];
 	matrixf_t Skew_q = {.mat = test_skew_quat, .HEIGHT = 4, .WIDTH = 3};
-	mat_utils_skew_quat(state, &Skew_q);
+	mat_utils_skew_quat(state, &Skew_q, (1.0f/20.0f));
 
 	TEST_ASSERT_EQUAL_FLOAT_ARRAY(skew_quat_truth, Skew_q.mat, 12);
 }

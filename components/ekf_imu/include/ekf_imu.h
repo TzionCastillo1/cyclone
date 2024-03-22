@@ -2,8 +2,10 @@
 #define EKF_IMU_H
 
 #include "mat_utils.h"
+#include "array_utils.h"
 #include "stdint.h"
 
+#define DEGTORAD (3.1415/180)
 typedef struct
 {
 	//TODO: store the information required to filter. The actual data will not be stored her,
@@ -20,27 +22,42 @@ typedef struct
 	float P[49];
 	float x[7];
 
-	matrixf_t R_init;// = {.mat=R, .HEIGHT=3, .HEIGHT=3};
-	matrixf_t Q_init;// = {.mat=Q, .HEIGHT=7, .HEIGHT=7};
-	matrixf_t P_init;// = {.mat=P, .HEIGHT=7, .HEIGHT=7};
-	matrixf_t x_init;// = {.mat=x, .HEIGHT=7, .WIDTH=1};
+	matrixf_t R_init;
+	matrixf_t Q_init;
+	matrixf_t P_init;
+	matrixf_t x_init;
 
 } ekf_imu_config_t;
 
 typedef struct
 {
 	float R_mat[9];
-	matrixf_t R;
 	float Q_mat[49];
-	matrixf_t Q;
 	float K_mat[21];
-	matrixf_t K;
 	float P_mat[49];
-	matrixf_t P;
 	float x_mat[7];
+
+	matrixf_t R;
+	matrixf_t Q;
+	matrixf_t K;
+	matrixf_t P;
 	matrixf_t x;
 } ekf_imu_filter_t;
 
-void ekf_imu_get_F(ekf_imu_filter_t* this, matrixf_t F, float gyro_rates[3], const float dt);
+void ekf_imu_update_state(ekf_imu_filter_t* this, float* acc_measurements);
+
+void ekf_imu_predict_state(ekf_imu_filter_t* this, float* gyro_rates, float dt);
+
+void ekf_imu_get_F(ekf_imu_filter_t* this, matrixf_t* F, float gyro_rates[3], const float dt);
+
+void ekf_imu_get_H(ekf_imu_filter_t* this, matrixf_t* H);
+
+void ekf_imu_get_h(ekf_imu_filter_t* this, matrixf_t* h);
+
+void ekf_imu_set_default_params(ekf_imu_config_t* config, const float R_INITIAL_DIAG, const float Q_INITIAL_DIAG, const float P_INITIAL_DIAG);
+
+void ekf_imu_reset(const ekf_imu_config_t* config, ekf_imu_filter_t* this);
+
+void ekf_imu_init(const ekf_imu_config_t* config, ekf_imu_filter_t* this);
 
 #endif /* ekf_imu_h */

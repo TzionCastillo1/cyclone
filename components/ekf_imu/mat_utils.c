@@ -12,6 +12,8 @@ void mat_utils_transpose(const matrixf_t* A, matrixf_t* A_transpose)
 		for(int column = 0; column < A->WIDTH; column++)
 			A_transpose->mat[((column * A->HEIGHT) + row)] = A->mat[((row * A->WIDTH) + column)];
 	}
+	A_transpose->HEIGHT = A->WIDTH;
+	A_transpose->WIDTH = A->HEIGHT;
 }
 
 void mat_utils_eye(matrixf_t* A)
@@ -35,8 +37,25 @@ void mat_utils_mult_scalar(const matrixf_t* A, matrixf_t* B, const float scalar)
 
 void mat_utils_c_mult_scalar(matrixf_t* A, const float scalar)
 {
-	for(int item = 0; item < (A->HEIGHT * A->WIDTH); item++)
-		A->mat[item] = scalar * (A->mat[item]);
+	mat_utils_mult_scalar(A, A, scalar);
+}
+
+void mat_utils_mat_mult(const matrixf_t* A, const matrixf_t* B, matrixf_t* C)
+{
+	for (int row = 0; row < A->HEIGHT; row++)
+	{
+		for (int col = 0; col < B->WIDTH; col++)
+		{
+			C->mat[(row * B->WIDTH) + col] = A->mat[row * A->WIDTH] * B->mat[col];
+			for (int Acol = 1; Acol < A->WIDTH; Acol++)
+			{
+				C->mat[(row * B->WIDTH) + col] += A->mat[(row * A->WIDTH) + Acol] * B->mat[(Acol * B->WIDTH) + col];
+			}
+		}
+	}
+
+	C->HEIGHT = A->HEIGHT;
+	C->WIDTH = B->WIDTH;
 }
 
 void mat_utils_c_add(matrixf_t* A, const matrixf_t* B)
@@ -50,6 +69,23 @@ void mat_utils_c_sub(matrixf_t* A, const matrixf_t* B)
 	for(int item = 0; item < (A->HEIGHT * A->WIDTH); item++)
 		A->mat[item] = A->mat[item] - B->mat[item];
 	
+}
+
+void mat_utils_copy(const matrixf_t* A, matrixf_t* B)
+{
+	for (int item = 0; item < (A->HEIGHT * A->WIDTH); item++)
+		B->mat[item] = A->mat[item];
+}
+
+void mat_utils_copy_block(matrixf_t* A, const uint8_t A_start_row, const uint8_t A_start_col, const matrixf_t* B, const uint8_t B_start_row, const uint8_t B_start_col, const uint8_t B_end_row, const uint8_t B_end_col)
+{
+	for (int A_row = A_start_row, B_row = B_start_row; B_row <= B_end_row; A_row++, B_row++)
+	{
+		for (int A_col = A_start_col, B_col = B_start_col; B_col <= B_end_col; A_col++, B_col++)
+		{
+			A->mat[(A_row * A->WIDTH) + A_col] = B->mat[(B_row * B->WIDTH) + B_col];
+		}
+	}
 }
 
 void mat_utils_inverse_3x3(const matrixf_t* A, matrixf_t* A_inv)
@@ -122,7 +158,7 @@ void mat_utils_inverse_3x3(const matrixf_t* A, matrixf_t* A_inv)
 }
 
 
-void mat_utils_skew_quat(const float* q, matrixf_t* S_q)
+void mat_utils_skew_quat(const float* q, matrixf_t* S_q, const float dt)
 {
 	float S_q_temp[12] = {-q[1], -q[2], -q[3],
 						q[0], -q[3], q[2],
@@ -131,6 +167,8 @@ void mat_utils_skew_quat(const float* q, matrixf_t* S_q)
 
 	for(int item = 0; item < 12; item++)
 		S_q->mat[item] = S_q_temp[item];
+
+	mat_utils_c_mult_scalar(S_q, dt/2);
 }
 
 void mat_utils_quat_norm(float* q)
