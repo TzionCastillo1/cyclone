@@ -1,0 +1,211 @@
+[1/12] Performing build step for 'bootloader'
+[1/1] cd /home/tzion/Projects/cyclone/components/icm20608_driver/example/build/bootloader/esp-idf/esptool_py && /home/tzion/.espressif/python_env/idf5.1_py3.8_env/bin/python /home/tzion/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/tzion/Projects/cyclone/components/icm20608_driver/example/build/bootloader/bootloader.bin
+Bootloader binary size 0x51c0 bytes. 0x2e40 bytes (36%) free.
+[2/10] Building C object esp-idf/i2c_helper/CMakeFiles/__idf_i2c_helper.dir/i2c_helper.c.obj
+[3/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj 
+/home/tzion/.espressif/tools/xtensa-esp32s3-elf/esp-12.2.0_20230208/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.1.2-dirty\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -Iconfig -I/home/tzion/Projects/cyclone/components/icm20608_driver/include -I/home/tzion/esp/esp-idf/components/newlib/platform_include -I/home/tzion/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/tzion/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/tzion/esp/esp-idf/components/freertos/esp_additions/include/freertos -I/home/tzion/esp/esp-idf/components/freertos/esp_additions/include -I/home/tzion/esp/esp-idf/components/freertos/esp_additions/arch/xtensa/include -I/home/tzion/esp/esp-idf/components/esp_hw_support/include -I/home/tzion/esp/esp-idf/components/esp_hw_support/include/soc -I/home/tzion/esp/esp-idf/components/esp_hw_support/include/soc/esp32s3 -I/home/tzion/esp/esp-idf/components/esp_hw_support/port/esp32s3/. -I/home/tzion/esp/esp-idf/components/esp_hw_support/port/esp32s3/private_include -I/home/tzion/esp/esp-idf/components/heap/include -I/home/tzion/esp/esp-idf/components/log/include -I/home/tzion/esp/esp-idf/components/soc/include -I/home/tzion/esp/esp-idf/components/soc/esp32s3 -I/home/tzion/esp/esp-idf/components/soc/esp32s3/include -I/home/tzion/esp/esp-idf/components/hal/esp32s3/include -I/home/tzion/esp/esp-idf/components/hal/include -I/home/tzion/esp/esp-idf/components/hal/platform_port/include -I/home/tzion/esp/esp-idf/components/esp_rom/include -I/home/tzion/esp/esp-idf/components/esp_rom/include/esp32s3 -I/home/tzion/esp/esp-idf/components/esp_rom/esp32s3 -I/home/tzion/esp/esp-idf/components/esp_common/include -I/home/tzion/esp/esp-idf/components/esp_system/include -I/home/tzion/esp/esp-idf/components/esp_system/port/soc -I/home/tzion/esp/esp-idf/components/esp_system/port/include/private -I/home/tzion/esp/esp-idf/components/xtensa/include -I/home/tzion/esp/esp-idf/components/xtensa/esp32s3/include -I/home/tzion/esp/esp-idf/components/driver/include -I/home/tzion/esp/esp-idf/components/driver/deprecated -I/home/tzion/esp/esp-idf/components/driver/analog_comparator/include -I/home/tzion/esp/esp-idf/components/driver/dac/include -I/home/tzion/esp/esp-idf/components/driver/gpio/include -I/home/tzion/esp/esp-idf/components/driver/gptimer/include -I/home/tzion/esp/esp-idf/components/driver/i2c/include -I/home/tzion/esp/esp-idf/components/driver/i2s/include -I/home/tzion/esp/esp-idf/components/driver/ledc/include -I/home/tzion/esp/esp-idf/components/driver/mcpwm/include -I/home/tzion/esp/esp-idf/components/driver/parlio/include -I/home/tzion/esp/esp-idf/components/driver/pcnt/include -I/home/tzion/esp/esp-idf/components/driver/rmt/include -I/home/tzion/esp/esp-idf/components/driver/sdio_slave/include -I/home/tzion/esp/esp-idf/components/driver/sdmmc/include -I/home/tzion/esp/esp-idf/components/driver/sigma_delta/include -I/home/tzion/esp/esp-idf/components/driver/spi/include -I/home/tzion/esp/esp-idf/components/driver/temperature_sensor/include -I/home/tzion/esp/esp-idf/components/driver/touch_sensor/include -I/home/tzion/esp/esp-idf/components/driver/twai/include -I/home/tzion/esp/esp-idf/components/driver/uart/include -I/home/tzion/esp/esp-idf/components/driver/usb_serial_jtag/include -I/home/tzion/esp/esp-idf/components/driver/touch_sensor/esp32s3/include -I/home/tzion/esp/esp-idf/components/esp_pm/include -I/home/tzion/esp/esp-idf/components/esp_ringbuf/include -I/home/tzion/Projects/cyclone/components/i2c_helper/include -mlongcalls    -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fmacro-prefix-map=/home/tzion/Projects/cyclone/components/icm20608_driver/example=. -fmacro-prefix-map=/home/tzion/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu17 -Wno-old-style-declaration --coverage -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj   -c ../main/main.c
+../main/main.c: In function 'app_main':
+../main/main.c:31:24: error: 'imu_config' undeclared (first use in this function); did you mean 'imu_config_t'?
+   31 |         icm20608_init(&imu_config, I2C_NUM_0);
+      |                        ^~~~~~~~~~
+      |                        imu_config_t
+../main/main.c:31:24: note: each undeclared identifier is reported only once for each function it appears in
+../main/main.c:44:17: error: implicit declaration of function 'icm_20608_get_motion_raw'; did you mean 'icm20608_get_motion_raw'? [-Werror=implicit-function-declaration]
+   44 |                 icm_20608_get_motion_raw(&imu_config, gyro_readings_raw, acc_readings_raw);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~
+      |                 icm20608_get_motion_raw
+../main/main.c:53:17: error: implicit declaration of function 'icm_20608_get_motion_scaled'; did you mean 'icm20608_get_motion_scaled'? [-Werror=implicit-function-declaration]
+   53 |                 icm_20608_get_motion_scaled(&imu_config, gyro_readings_scaled, acc_readings_scaled);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                 icm20608_get_motion_scaled
+In file included from ../main/main.c:2:
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:265:27: error: format '%d' expects argument of type 'int', but argument 6 has type 'double' [-Werror=format=]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:268:27: note: in expansion of macro 'LOG_COLOR'
+  268 | #define LOG_COLOR_E       LOG_COLOR(LOG_COLOR_RED)
+      |                           ^~~~~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_E'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:410:86: note: in expansion of macro 'LOG_FORMAT'
+  410 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+../main/main.c:56:25: note: in expansion of macro 'ESP_LOGI'
+   56 |                         ESP_LOGI(TAG, "%d", gyro_readings_scaled[axis]);
+      |                         ^~~~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:265:27: error: format '%d' expects argument of type 'int', but argument 6 has type 'double' [-Werror=format=]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:269:27: note: in expansion of macro 'LOG_COLOR'
+  269 | #define LOG_COLOR_W       LOG_COLOR(LOG_COLOR_BROWN)
+      |                           ^~~~~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_W'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:411:86: note: in expansion of macro 'LOG_FORMAT'
+  411 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+../main/main.c:56:25: note: in expansion of macro 'ESP_LOGI'
+   56 |                         ESP_LOGI(TAG, "%d", gyro_readings_scaled[axis]);
+      |                         ^~~~~~~~
+../main/main.c:56:8: error: format '%d' expects argument of type 'int', but argument 6 has type 'double' [-Werror=format=]
+   56 |                         ESP_LOGI(TAG, "%d", gyro_readings_scaled[axis]);
+      | ^                       ~~~~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:282:59: note: in definition of macro 'LOG_FORMAT'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+../main/main.c:56:25: note: in expansion of macro 'ESP_LOGI'
+   56 |                         ESP_LOGI(TAG, "%d", gyro_readings_scaled[axis]);
+      |                         ^~~~~~~~
+../main/main.c:56:8: error: format '%d' expects argument of type 'int', but argument 6 has type 'double' [-Werror=format=]
+   56 |                         ESP_LOGI(TAG, "%d", gyro_readings_scaled[axis]);
+      | ^                       ~~~~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:282:59: note: in definition of macro 'LOG_FORMAT'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+../main/main.c:56:25: note: in expansion of macro 'ESP_LOGI'
+   56 |                         ESP_LOGI(TAG, "%d", gyro_readings_scaled[axis]);
+      |                         ^~~~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:265:27: error: format '%d' expects argument of type 'int', but argument 6 has type 'double' [-Werror=format=]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:270:27: note: in expansion of macro 'LOG_COLOR'
+  270 | #define LOG_COLOR_I       LOG_COLOR(LOG_COLOR_GREEN)
+      |                           ^~~~~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_I'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:414:86: note: in expansion of macro 'LOG_FORMAT'
+  414 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+../main/main.c:56:25: note: in expansion of macro 'ESP_LOGI'
+   56 |                         ESP_LOGI(TAG, "%d", gyro_readings_scaled[axis]);
+      |                         ^~~~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:265:27: error: format '%d' expects argument of type 'int', but argument 6 has type 'double' [-Werror=format=]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:268:27: note: in expansion of macro 'LOG_COLOR'
+  268 | #define LOG_COLOR_E       LOG_COLOR(LOG_COLOR_RED)
+      |                           ^~~~~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_E'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:410:86: note: in expansion of macro 'LOG_FORMAT'
+  410 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+../main/main.c:60:25: note: in expansion of macro 'ESP_LOGI'
+   60 |                         ESP_LOGI(TAG, "%d", acc_readings_scaled[axis]);
+      |                         ^~~~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:265:27: error: format '%d' expects argument of type 'int', but argument 6 has type 'double' [-Werror=format=]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:269:27: note: in expansion of macro 'LOG_COLOR'
+  269 | #define LOG_COLOR_W       LOG_COLOR(LOG_COLOR_BROWN)
+      |                           ^~~~~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_W'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:411:86: note: in expansion of macro 'LOG_FORMAT'
+  411 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+../main/main.c:60:25: note: in expansion of macro 'ESP_LOGI'
+   60 |                         ESP_LOGI(TAG, "%d", acc_readings_scaled[axis]);
+      |                         ^~~~~~~~
+../main/main.c:60:8: error: format '%d' expects argument of type 'int', but argument 6 has type 'double' [-Werror=format=]
+   60 |                         ESP_LOGI(TAG, "%d", acc_readings_scaled[axis]);
+      | ^                       ~~~~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:282:59: note: in definition of macro 'LOG_FORMAT'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+../main/main.c:60:25: note: in expansion of macro 'ESP_LOGI'
+   60 |                         ESP_LOGI(TAG, "%d", acc_readings_scaled[axis]);
+      |                         ^~~~~~~~
+../main/main.c:60:8: error: format '%d' expects argument of type 'int', but argument 6 has type 'double' [-Werror=format=]
+   60 |                         ESP_LOGI(TAG, "%d", acc_readings_scaled[axis]);
+      | ^                       ~~~~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:282:59: note: in definition of macro 'LOG_FORMAT'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+../main/main.c:60:25: note: in expansion of macro 'ESP_LOGI'
+   60 |                         ESP_LOGI(TAG, "%d", acc_readings_scaled[axis]);
+      |                         ^~~~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:265:27: error: format '%d' expects argument of type 'int', but argument 6 has type 'double' [-Werror=format=]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:270:27: note: in expansion of macro 'LOG_COLOR'
+  270 | #define LOG_COLOR_I       LOG_COLOR(LOG_COLOR_GREEN)
+      |                           ^~~~~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_I'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:414:86: note: in expansion of macro 'LOG_FORMAT'
+  414 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/tzion/esp/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+../main/main.c:60:25: note: in expansion of macro 'ESP_LOGI'
+   60 |                         ESP_LOGI(TAG, "%d", acc_readings_scaled[axis]);
+      |                         ^~~~~~~~
+cc1: some warnings being treated as errors
+[4/10] Linking C static library esp-idf/i2c_helper/libi2c_helper.a
+ninja: build stopped: subcommand failed.

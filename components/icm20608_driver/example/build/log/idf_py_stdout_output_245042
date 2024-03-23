@@ -1,0 +1,1009 @@
+[1/518] Generating memory.ld linker script...
+[2/518] Generating project_elf_src_esp32s3.c
+[3/518] Building C object esp-idf/mbedtls/mbedtls/3rdparty/everest/CMakeFiles/everest.dir/library/x25519.c.obj
+[4/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/memory_buffer_alloc.c.obj
+[5/518] Building C object esp-idf/mbedtls/mbedtls/3rdparty/everest/CMakeFiles/everest.dir/library/Hacl_Curve25519_joined.c.obj
+[6/518] Building C object esp-idf/mbedtls/mbedtls/3rdparty/everest/CMakeFiles/everest.dir/library/everest.c.obj
+[7/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/mps_reader.c.obj
+[8/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/mps_trace.c.obj
+[9/518] Building C object esp-idf/mbedtls/mbedtls/3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m_driver_entrypoints.c.obj
+[10/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/debug.c.obj
+[11/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_debug_helpers_generated.c.obj
+[12/518] Generating ../../partition_table/partition-table.bin
+Partition table binary generated. Contents:
+*******************************************************************************
+# ESP-IDF Partition Table
+# Name, Type, SubType, Offset, Size, Flags
+nvs,data,nvs,0x9000,24K,
+phy_init,data,phy,0xf000,4K,
+factory,app,factory,0x10000,1M,
+*******************************************************************************
+[13/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_cache.c.obj
+[14/518] Building C object esp-idf/mbedtls/mbedtls/3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m/p256-m.c.obj
+[15/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_cookie.c.obj
+[16/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls13_keys.c.obj
+[17/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_client.c.obj
+[18/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/__/__/port/mbedtls_debug.c.obj
+[19/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_ciphersuites.c.obj
+[20/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_ticket.c.obj
+[21/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls13_server.c.obj
+[22/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls13_client.c.obj
+[23/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls13_generic.c.obj
+[24/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/__/__/port/esp_platform_time.c.obj
+[25/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509_create.c.obj
+[26/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls12_client.c.obj
+[27/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_msg.c.obj
+[28/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509write.c.obj
+[29/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls12_server.c.obj
+[30/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/pkcs7.c.obj
+[31/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/aesni.c.obj
+[32/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509_csr.c.obj
+[33/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/aesce.c.obj
+[34/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509write_csr.c.obj
+[35/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509_crl.c.obj
+[36/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509write_crt.c.obj
+[37/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/asn1write.c.obj
+[38/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/aes.c.obj
+[39/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509.c.obj
+[40/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/asn1parse.c.obj
+[41/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/base64.c.obj
+[42/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/camellia.c.obj
+[43/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/bignum_mod.c.obj
+[44/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/bignum_mod_raw.c.obj
+[45/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/chachapoly.c.obj
+[46/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/chacha20.c.obj
+[47/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls.c.obj
+[48/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/bignum_core.c.obj
+[49/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509_crt.c.obj
+[50/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/aria.c.obj
+[51/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/constant_time.c.obj
+[52/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/des.c.obj
+[53/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/dhm.c.obj
+[54/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/cipher_wrap.c.obj
+[55/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/cmac.c.obj
+[56/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ctr_drbg.c.obj
+[57/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ecjpake.c.obj
+[58/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/bignum.c.obj
+[59/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ecdh.c.obj
+[60/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ccm.c.obj
+[61/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ecp_curves_new.c.obj
+[62/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/hkdf.c.obj
+[63/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/cipher.c.obj
+[64/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ecdsa.c.obj
+[65/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/entropy_poll.c.obj
+[66/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/entropy.c.obj
+[67/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/hmac_drbg.c.obj
+[68/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/lms.c.obj
+[69/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/lmots.c.obj
+[70/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/error.c.obj
+[71/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/md5.c.obj
+[72/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/gcm.c.obj
+[73/518] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_boya.c.obj
+[74/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/md.c.obj
+[75/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/nist_kw.c.obj
+[76/518] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_winbond.c.obj
+[77/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/padlock.c.obj
+[78/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pem.c.obj
+[79/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/platform_util.c.obj
+[80/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/oid.c.obj
+[81/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pk_wrap.c.obj
+[82/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pk.c.obj
+[83/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/platform.c.obj
+[84/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/poly1305.c.obj
+[85/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ecp.c.obj
+[86/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pkcs12.c.obj
+[87/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pkwrite.c.obj
+[88/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pkcs5.c.obj
+[89/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_aead.c.obj
+[90/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ecp_curves.c.obj
+[91/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_driver_wrappers_no_static.c.obj
+[92/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_cipher.c.obj
+[93/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_client.c.obj
+[94/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_ffdh.c.obj
+[95/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pkparse.c.obj
+[96/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_se.c.obj
+[97/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_pake.c.obj
+[98/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_hash.c.obj
+[99/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_its_file.c.obj
+[100/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_storage.c.obj
+[101/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_ecp.c.obj
+[102/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_util.c.obj
+[103/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ripemd160.c.obj
+[104/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_slot_management.c.obj
+[105/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_mac.c.obj
+[106/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/sha1.c.obj
+[107/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/rsa_alt_helpers.c.obj
+[108/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/sha512.c.obj
+[109/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/sha256.c.obj
+[110/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/timing.c.obj
+[111/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/version.c.obj
+[112/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/__/__/port/sha/dma/esp_sha_gdma_impl.c.obj
+[113/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_rsa.c.obj
+[114/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/threading.c.obj
+[115/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/version_features.c.obj
+[116/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/__/__/port/aes/dma/esp_aes_gdma_impl.c.obj
+[117/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/__/__/port/esp_hardware.c.obj
+[118/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/__/__/port/aes/esp_aes_xts.c.obj
+[119/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/__/__/port/esp_mem.c.obj
+[120/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/__/__/port/crypto_shared_gdma/esp_crypto_shared_gdma.c.obj
+[121/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/__/__/port/aes/esp_aes_common.c.obj
+[122/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/__/__/port/esp_timing.c.obj
+[123/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/sha3.c.obj
+[124/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/__/__/port/sha/esp_sha.c.obj
+[125/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/__/__/port/esp32s3/bignum.c.obj
+[126/518] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_rtc_calib.c.obj
+[127/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/__/__/port/esp_bignum.c.obj
+[128/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/__/__/port/sha/dma/esp_sha1.c.obj
+[129/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/__/__/port/aes/esp_aes_gcm.c.obj
+[130/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/rsa.c.obj
+[131/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/__/__/port/sha/dma/sha.c.obj
+[132/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/__/__/port/sha/dma/esp_sha256.c.obj
+[133/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/__/__/port/sha/dma/esp_sha512.c.obj
+[134/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/__/__/port/md/esp_md.c.obj
+[135/518] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_table.c.obj
+[136/518] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_fields.c.obj
+[137/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/__/__/port/aes/dma/esp_aes.c.obj
+[138/518] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_fields.c.obj
+[139/518] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_utility.c.obj
+[140/518] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_api.c.obj
+[141/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/usb_phy_hal.c.obj
+[142/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32s3/rtc_cntl_hal.c.obj
+[143/518] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_efuse.c.obj
+[144/518] Building C object esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.obj
+[145/518] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/efuse_controller/keys/with_key_purposes/esp_efuse_api_key.c.obj
+[146/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32s3/touch_sensor_hal.c.obj
+[147/518] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_clock_init.c.obj
+[148/518] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_mem.c.obj
+[149/518] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_utility.c.obj
+[150/518] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_common.c.obj
+[151/518] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_common_loader.c.obj
+[152/518] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_random_esp32s3.c.obj
+[153/518] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_random.c.obj
+[154/518] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto.c.obj
+[155/518] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/secure_boot.c.obj
+[156/518] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/flash_encrypt.c.obj
+[157/518] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/idf/bootloader_sha.c.obj
+[158/518] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/flash_partitions.c.obj
+[159/518] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/flash_qio_mode.c.obj
+[160/518] Building C object esp-idf/app_update/CMakeFiles/__idf_app_update.dir/esp_ota_app_desc.c.obj
+[161/518] Building C object esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/partition.c.obj
+[162/518] Building C object esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/partition_target.c.obj
+[163/518] Building C object esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/port/esp32s3/ext_mem_layout.c.obj
+[164/518] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/bootloader_flash.c.obj
+[165/518] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/bootloader_flash_config_esp32s3.c.obj
+[166/518] Creating directories for 'bootloader'
+[167/518] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/flash_brownout_hook.c.obj
+[168/518] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp_image_format.c.obj
+[169/518] Building C object esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/esp_cache.c.obj
+[170/518] No download step for 'bootloader'
+[171/518] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_issi.c.obj
+[172/518] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_utility.c.obj
+[173/518] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_hpm_enable.c.obj
+[174/518] Building C object esp-idf/app_update/CMakeFiles/__idf_app_update.dir/esp_ota_ops.c.obj
+[175/518] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_drivers.c.obj
+[176/518] No update step for 'bootloader'
+[177/518] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_mxic.c.obj
+[178/518] No patch step for 'bootloader'
+[179/518] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/esp32s3/spi_flash_oct_flash_init.c.obj
+[180/518] Building C object esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/esp_mmu_map.c.obj
+[181/518] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_gd.c.obj
+[182/518] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_th.c.obj
+[183/518] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/memspi_host_driver.c.obj
+[184/518] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/cache_utils.c.obj
+[185/518] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_generic.c.obj
+[186/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/i2s/i2s_tdm.c.obj
+[187/518] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_wrap.c.obj
+[188/518] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_os_func_noos.c.obj
+[189/518] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_mxic_opi.c.obj
+[190/518] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/flash_mmap.c.obj
+[191/518] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/flash_ops.c.obj
+[192/518] Building C object esp-idf/esp_timer/CMakeFiles/__idf_esp_timer.dir/src/system_time.c.obj
+[193/518] Building C object esp-idf/esp_timer/CMakeFiles/__idf_esp_timer.dir/src/ets_timer_legacy.c.obj
+[194/518] Building C object esp-idf/esp_timer/CMakeFiles/__idf_esp_timer.dir/src/esp_timer.c.obj
+[195/518] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/esp_flash_spi_init.c.obj
+[196/518] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_os_func_app.c.obj
+[197/518] Building C object esp-idf/esp_timer/CMakeFiles/__idf_esp_timer.dir/src/esp_timer_impl_common.c.obj
+[198/518] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/esp_flash_api.c.obj
+[199/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/ledc/ledc.c.obj
+[200/518] Building C object esp-idf/pthread/CMakeFiles/__idf_pthread.dir/pthread_cond_var.c.obj
+[201/518] Building C object esp-idf/esp_timer/CMakeFiles/__idf_esp_timer.dir/src/esp_timer_impl_systimer.c.obj
+[202/518] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_err.c.obj
+[203/518] Building C object esp-idf/pthread/CMakeFiles/__idf_pthread.dir/pthread_local_storage.c.obj
+[204/518] Building C object esp-idf/pthread/CMakeFiles/__idf_pthread.dir/pthread_semaphore.c.obj
+[205/518] Building C object esp-idf/pthread/CMakeFiles/__idf_pthread.dir/pthread_rwlock.c.obj
+[206/518] Building C object esp-idf/pthread/CMakeFiles/__idf_pthread.dir/pthread.c.obj
+[207/518] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/crosscore_int.c.obj
+[208/518] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/brownout.c.obj
+[209/518] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/debug_stubs.c.obj
+[210/518] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_ipc.c.obj
+[211/518] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/xt_wdt.c.obj
+[212/518] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_system.c.obj
+[213/518] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/int_wdt.c.obj
+[214/518] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/freertos_hooks.c.obj
+[215/518] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/stack_check.c.obj
+[216/518] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/ubsan.c.obj
+[217/518] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/panic.c.obj
+[218/518] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/system_time.c.obj
+[219/518] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/task_wdt/task_wdt_impl_timergroup.c.obj
+[220/518] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/startup.c.obj
+[221/518] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/esp_system_chip.c.obj
+[222/518] Building ASM object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32s3/highint_hdl.S.obj
+[223/518] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/panic_handler.c.obj
+[224/518] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/cpu_start.c.obj
+[225/518] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/trax.c.obj
+[226/518] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32s3/reset_reason.c.obj
+[227/518] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32s3/apb_backup_dma.c.obj
+[228/518] Building ASM object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/panic_handler_asm.S.obj
+[229/518] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/task_wdt/task_wdt.c.obj
+[230/518] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32s3/clk.c.obj
+[231/518] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32s3/cache_err_int.c.obj
+[232/518] Building ASM object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/debug_helpers_asm.S.obj
+[233/518] Building ASM object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/expression_with_stack_asm.S.obj
+[234/518] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32s3/system_internal.c.obj
+[235/518] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/expression_with_stack.c.obj
+[236/518] Building ASM object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/esp_ipc_isr_handler.S.obj
+[237/518] Building ASM object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/esp_ipc_isr_routines.S.obj
+[238/518] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/debug_stubs.c.obj
+[239/518] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/debug_helpers.c.obj
+[240/518] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/panic_arch.c.obj
+[241/518] Building C object esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/esp_err_to_name.c.obj
+[242/518] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_crc.c.obj
+[243/518] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_sys.c.obj
+[244/518] Building ASM object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_longjmp.S.obj
+[245/518] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_efuse.c.obj
+[246/518] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_systimer.c.obj
+[247/518] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_uart.c.obj
+[248/518] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_spiflash.c.obj
+[249/518] Building ASM object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_cache_writeback_esp32s3.S.obj
+[250/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/mpu_hal.c.obj
+[251/518] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_wdt.c.obj
+[252/518] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_cache_esp32s2_esp32s3.c.obj
+[253/518] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/esp_ipc_isr.c.obj
+[254/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/efuse_hal.c.obj
+[255/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/mmu_hal.c.obj
+[256/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/cache_hal.c.obj
+[257/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32s3/efuse_hal.c.obj
+[258/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/uart_hal_iram.c.obj
+[259/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32s3/clk_tree_hal.c.obj
+[260/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/rtc_io_hal.c.obj
+[261/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/gpio_hal.c.obj
+[262/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_hal_common.c.obj
+[263/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/ledc_hal.c.obj
+[264/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/uart_hal.c.obj
+[265/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_oneshot_hal.c.obj
+[266/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_encrypt_hal_iram.c.obj
+[267/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/systimer_hal.c.obj
+[268/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_hal.c.obj
+[269/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/timer_hal.c.obj
+[270/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_hal_iram.c.obj
+[271/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/i2c_hal.c.obj
+[272/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/ledc_hal_iram.c.obj
+[273/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/pcnt_hal.c.obj
+[274/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/rmt_hal.c.obj
+[275/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/gdma_hal.c.obj
+[276/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/i2c_hal_iram.c.obj
+[277/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/mcpwm_hal.c.obj
+[278/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/sdm_hal.c.obj
+[279/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/twai_hal.c.obj
+[280/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/twai_hal_iram.c.obj
+[281/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/lcd_hal.c.obj
+[282/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/aes_hal.c.obj
+[283/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/brownout_hal.c.obj
+[284/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/sha_hal.c.obj
+[285/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_slave_hal_iram.c.obj
+[286/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/i2s_hal.c.obj
+[287/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/hmac_hal.c.obj
+[288/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_hal.c.obj
+[289/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_hal.c.obj
+[290/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_slave_hal.c.obj
+[291/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_hal_iram.c.obj
+[292/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/ds_hal.c.obj
+[293/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/usb_hal.c.obj
+[294/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/touch_sensor_hal.c.obj
+[295/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/xt_wdt_hal.c.obj
+[296/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_hal_gpspi.c.obj
+[297/518] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/log.c.obj
+[298/518] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/log_buffers.c.obj
+[299/518] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/log_freertos.c.obj
+[300/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_slave_hd_hal.c.obj
+[301/518] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/usb_dwc_hal.c.obj
+[302/518] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/dport_access_common.c.obj
+[303/518] Building C object esp-idf/heap/CMakeFiles/__idf_heap.dir/port/memory_layout_utils.c.obj
+[304/518] Building C object esp-idf/heap/CMakeFiles/__idf_heap.dir/port/esp32s3/memory_layout.c.obj
+[305/518] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/lldesc.c.obj
+[306/518] Building C object esp-idf/heap/CMakeFiles/__idf_heap.dir/multi_heap.c.obj
+[307/518] Building C object esp-idf/heap/CMakeFiles/__idf_heap.dir/heap_caps_init.c.obj
+[308/518] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/interrupts.c.obj
+[309/518] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/gpio_periph.c.obj
+[310/518] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/uart_periph.c.obj
+[311/518] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/dedic_gpio_periph.c.obj
+[312/518] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/adc_periph.c.obj
+[313/518] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/gdma_periph.c.obj
+[314/518] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/ledc_periph.c.obj
+[315/518] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/sdm_periph.c.obj
+[316/518] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/rmt_periph.c.obj
+[317/518] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/pcnt_periph.c.obj
+[318/518] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/spi_periph.c.obj
+[319/518] Building C object esp-idf/heap/CMakeFiles/__idf_heap.dir/heap_caps.c.obj
+[320/518] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/temperature_sensor_periph.c.obj
+[321/518] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/i2s_periph.c.obj
+[322/518] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/lcd_periph.c.obj
+[323/518] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/i2c_periph.c.obj
+[324/518] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/twai_periph.c.obj
+[325/518] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/sdmmc_periph.c.obj
+[326/518] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/timer_periph.c.obj
+[327/518] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/touch_sensor_periph.c.obj
+[328/518] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/mcpwm_periph.c.obj
+[329/518] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/usb_periph.c.obj
+[330/518] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/esp_memory_utils.c.obj
+[331/518] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/usb_otg_periph.c.obj
+[332/518] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/rtc_io_periph.c.obj
+[333/518] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/io_mux.c.obj
+[334/518] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/cpu_region_protect.c.obj
+[335/518] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/esp_gpio_reserve.c.obj
+[336/518] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/cpu.c.obj
+[337/518] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_clk_tree.c.obj
+[338/518] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/hw_random.c.obj
+[339/518] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/clk_ctrl_os.c.obj
+[340/518] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/revision.c.obj
+[341/518] Building C object esp-idf/heap/CMakeFiles/__idf_heap.dir/tlsf/tlsf.c.obj
+[342/518] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/esp_clk.c.obj
+[343/518] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/mac_addr.c.obj
+[344/518] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sleep_modem.c.obj
+[345/518] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/intr_alloc.c.obj
+[346/518] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/periph_ctrl.c.obj
+[347/518] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/rtc_module.c.obj
+[348/518] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sar_periph_ctrl_common.c.obj
+[349/518] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp_clk_tree_common.c.obj
+[350/518] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/adc_share_hw_ctrl.c.obj
+[351/518] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/dma/async_memcpy_impl_gdma.c.obj
+[352/518] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/regi2c_ctrl.c.obj
+[353/518] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sleep_gpio.c.obj
+[354/518] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sleep_cpu.c.obj
+[355/518] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/systimer.c.obj
+[356/518] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/mspi_timing_config.c.obj
+[357/518] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/dma/esp_async_memcpy.c.obj
+[358/518] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk_init.c.obj
+[359/518] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/esp_ds.c.obj
+[360/518] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/esp_hmac.c.obj
+[361/518] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/mspi_timing_tuning.c.obj
+[362/518] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sleep_wake_stub.c.obj
+[363/518] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/chip_info.c.obj
+[364/518] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sleep_modes.c.obj
+[365/518] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_time.c.obj
+[366/518] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_crypto_lock.c.obj
+[367/518] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp_memprot_conv.c.obj
+[368/518] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_sleep.c.obj
+[369/518] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_init.c.obj
+[370/518] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/sar_periph_ctrl.c.obj
+[371/518] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/dma/gdma.c.obj
+[372/518] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk.c.obj
+[373/518] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/heap_idf.c.obj
+[374/518] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/esp_additions/idf_additions.c.obj
+[375/518] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/list.c.obj
+[376/518] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/app_startup.c.obj
+[377/518] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/portable/xtensa/port.c.obj
+[378/518] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/croutine.c.obj
+[379/518] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/timers.c.obj
+[380/518] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/esp_additions/freertos_v8_compat.c.obj
+[381/518] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-openocd.c.obj
+[382/518] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/portable/xtensa/xtensa_overlay_os_hook.c.obj
+[383/518] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/event_groups.c.obj
+[384/518] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/queue.c.obj
+[385/518] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/port_common.c.obj
+[386/518] Building ASM object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/portable/xtensa/portasm.S.obj
+[387/518] Building ASM object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/portable/xtensa/xtensa_context.S.obj
+[388/518] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/stream_buffer.c.obj
+[389/518] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/portable/xtensa/xtensa_init.c.obj
+[390/518] Building ASM object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S.obj
+[391/518] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/heap.c.obj
+[392/518] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/assert.c.obj
+[393/518] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/abort.c.obj
+[394/518] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/pthread.c.obj
+[395/518] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/random.c.obj
+[396/518] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/reent_init.c.obj
+[397/518] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/portable/port_systick.c.obj
+[398/518] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/locks.c.obj
+[399/518] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/poll.c.obj
+[400/518] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/termios.c.obj
+[401/518] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/newlib_init.c.obj
+[402/518] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/syscalls.c.obj
+[403/518] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/sysconf.c.obj
+[404/518] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_memprot.c.obj
+[405/518] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/realpath.c.obj
+[406/518] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/port/esp_time_impl.c.obj
+[407/518] Building C object esp-idf/esp_pm/CMakeFiles/__idf_esp_pm.dir/pm_trace.c.obj
+[408/518] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/time.c.obj
+[409/518] Building C object esp-idf/esp_pm/CMakeFiles/__idf_esp_pm.dir/pm_locks.c.obj
+[410/518] Building CXX object esp-idf/cxx/CMakeFiles/__idf_cxx.dir/cxx_exception_stubs.cpp.obj
+[411/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/gpio/gpio_glitch_filter_ops.c.obj
+[412/518] Building C object esp-idf/esp_pm/CMakeFiles/__idf_esp_pm.dir/pm_impl.c.obj
+[413/518] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/tasks.c.obj
+[414/518] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/stdatomic.c.obj
+[415/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/spi/spi_bus_lock.c.obj
+[416/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/gpio/rtc_io.c.obj
+[417/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/adc_legacy.c.obj
+[418/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/gpio/gpio_pin_glitch_filter.c.obj
+[419/518] Building CXX object esp-idf/cxx/CMakeFiles/__idf_cxx.dir/cxx_guards.cpp.obj
+[420/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/gptimer/gptimer_priv.c.obj
+[421/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/adc_dma_legacy.c.obj
+[422/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/gpio/dedic_gpio.c.obj
+[423/518] Building C object esp-idf/esp_ringbuf/CMakeFiles/__idf_esp_ringbuf.dir/ringbuf.c.obj
+[424/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/i2s/i2s_std.c.obj
+[425/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/gpio/gpio.c.obj
+[426/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/gptimer/gptimer.c.obj
+[427/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/timer_legacy.c.obj
+[428/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/i2s/i2s_pdm.c.obj
+[429/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/mcpwm/mcpwm_cmpr.c.obj
+[430/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/i2c/i2c.c.obj
+[431/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/mcpwm/mcpwm_cap.c.obj
+[432/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/mcpwm/mcpwm_com.c.obj
+[433/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/i2s/i2s_common.c.obj
+[434/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/mcpwm/mcpwm_fault.c.obj
+[435/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/i2s_legacy.c.obj
+[436/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/mcpwm/mcpwm_sync.c.obj
+[437/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/rmt/rmt_common.c.obj
+[438/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/mcpwm/mcpwm_timer.c.obj
+[439/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/mcpwm/mcpwm_oper.c.obj
+[440/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/rmt/rmt_encoder.c.obj
+[441/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/mcpwm/mcpwm_gen.c.obj
+[442/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/pcnt_legacy.c.obj
+[443/518] Performing configure step for 'bootloader'
+-- Found Git: /usr/bin/git (found version "2.25.1") 
+-- The C compiler identification is GNU 12.2.0
+-- The CXX compiler identification is GNU 12.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /home/tzion/.espressif/tools/xtensa-esp32s3-elf/esp-12.2.0_20230208/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc
+-- Check for working C compiler: /home/tzion/.espressif/tools/xtensa-esp32s3-elf/esp-12.2.0_20230208/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc
+-- Check for working C compiler: /home/tzion/.espressif/tools/xtensa-esp32s3-elf/esp-12.2.0_20230208/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /home/tzion/.espressif/tools/xtensa-esp32s3-elf/esp-12.2.0_20230208/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-g++
+-- Check for working CXX compiler: /home/tzion/.espressif/tools/xtensa-esp32s3-elf/esp-12.2.0_20230208/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-g++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Building ESP-IDF components for target esp32s3
+-- Project sdkconfig file /home/tzion/Projects/cyclone/components/icm20608_driver/example/sdkconfig
+Compiler supported targets: xtensa-esp32s3-elf
+
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of time_t
+-- Check size of time_t - done
+-- Adding linker script /home/tzion/esp/esp-idf/components/soc/esp32s3/ld/esp32s3.peripherals.ld
+-- App "bootloader" version: v5.1.2-dirty
+-- Adding linker script /home/tzion/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
+-- Adding linker script /home/tzion/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
+-- Adding linker script /home/tzion/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
+-- Adding linker script /home/tzion/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
+-- Adding linker script /home/tzion/esp/esp-idf/components/bootloader/subproject/main/ld/esp32s3/bootloader.ld
+-- Adding linker script /home/tzion/esp/esp-idf/components/bootloader/subproject/main/ld/esp32s3/bootloader.rom.ld
+-- Components: bootloader bootloader_support efuse esp_app_format esp_common esp_hw_support esp_rom esp_system esptool_py freertos hal log main micro-ecc newlib partition_table soc spi_flash xtensa
+-- Component paths: /home/tzion/esp/esp-idf/components/bootloader /home/tzion/esp/esp-idf/components/bootloader_support /home/tzion/esp/esp-idf/components/efuse /home/tzion/esp/esp-idf/components/esp_app_format /home/tzion/esp/esp-idf/components/esp_common /home/tzion/esp/esp-idf/components/esp_hw_support /home/tzion/esp/esp-idf/components/esp_rom /home/tzion/esp/esp-idf/components/esp_system /home/tzion/esp/esp-idf/components/esptool_py /home/tzion/esp/esp-idf/components/freertos /home/tzion/esp/esp-idf/components/hal /home/tzion/esp/esp-idf/components/log /home/tzion/esp/esp-idf/components/bootloader/subproject/main /home/tzion/esp/esp-idf/components/bootloader/subproject/components/micro-ecc /home/tzion/esp/esp-idf/components/newlib /home/tzion/esp/esp-idf/components/partition_table /home/tzion/esp/esp-idf/components/soc /home/tzion/esp/esp-idf/components/spi_flash /home/tzion/esp/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/tzion/Projects/cyclone/components/icm20608_driver/example/build/bootloader
+[444/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/sigma_delta_legacy.c.obj
+[445/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/pcnt/pulse_cnt.c.obj
+[446/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/rmt/rmt_rx.c.obj
+[447/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/sdmmc/sdmmc_transaction.c.obj
+[448/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/sdmmc/sdmmc_host.c.obj
+[449/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/sigma_delta/sdm.c.obj
+[450/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/spi/sdspi/sdspi_crc.c.obj
+[451/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/mcpwm_legacy.c.obj
+[452/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/spi/sdspi/sdspi_transaction.c.obj
+[453/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/spi/sdspi/sdspi_host.c.obj
+[454/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/spi/gpspi/spi_slave.c.obj
+[455/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/rmt/rmt_tx.c.obj
+[456/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/spi/gpspi/spi_common.c.obj
+[457/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/temperature_sensor/temperature_sensor.c.obj
+[458/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/spi/gpspi/spi_master.c.obj
+[459/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/rtc_temperature_legacy.c.obj
+[460/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/spi/gpspi/spi_slave_hd.c.obj
+[461/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/twai/twai.c.obj
+[462/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/usb_serial_jtag/usb_serial_jtag_connection_monitor.c.obj
+[463/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/touch_sensor/touch_sensor_common.c.obj
+[464/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/usb_serial_jtag/usb_serial_jtag.c.obj
+[465/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/touch_sensor/esp32s3/touch_sensor.c.obj
+[466/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/rmt_legacy.c.obj
+[467/518] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/uart/uart.c.obj
+[468/518] Linking C static library esp-idf/driver/libdriver.a
+[469/518] Linking C static library esp-idf/esp_ringbuf/libesp_ringbuf.a
+[470/518] Linking C static library esp-idf/esp_pm/libesp_pm.a
+[471/518] Linking C static library esp-idf/cxx/libcxx.a
+[472/518] Linking C static library esp-idf/newlib/libnewlib.a
+[473/518] Linking C static library esp-idf/freertos/libfreertos.a
+[474/518] Linking C static library esp-idf/esp_hw_support/libesp_hw_support.a
+[475/518] Linking C static library esp-idf/soc/libsoc.a
+[476/518] Linking C static library esp-idf/heap/libheap.a
+[477/518] Linking C static library esp-idf/log/liblog.a
+[478/518] Linking C static library esp-idf/hal/libhal.a
+[479/518] Linking C static library esp-idf/esp_rom/libesp_rom.a
+[480/518] Linking C static library esp-idf/esp_common/libesp_common.a
+[481/518] Linking C static library esp-idf/esp_system/libesp_system.a
+[482/518] Linking C static library esp-idf/pthread/libpthread.a
+[483/518] Linking C static library esp-idf/esp_timer/libesp_timer.a
+[484/518] Linking C static library esp-idf/spi_flash/libspi_flash.a
+[485/518] Linking C static library esp-idf/esp_mm/libesp_mm.a
+[486/518] Linking C static library esp-idf/app_update/libapp_update.a
+[487/518] Linking C static library esp-idf/esp_partition/libesp_partition.a
+[488/518] Linking C static library esp-idf/bootloader_support/libbootloader_support.a
+[489/518] Linking C static library esp-idf/esp_app_format/libesp_app_format.a
+[490/518] Linking C static library esp-idf/efuse/libefuse.a
+[491/518] Linking CXX static library esp-idf/mbedtls/mbedtls/library/libmbedcrypto.a
+[492/518] Linking CXX static library esp-idf/mbedtls/mbedtls/library/libmbedx509.a
+[493/518] Performing build step for 'bootloader'
+[1/110] Generating project_elf_src_esp32s3.c
+[2/110] Building C object esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/eri.c.obj
+[3/110] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/dport_access_common.c.obj
+[4/110] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/lldesc.c.obj
+[5/110] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/gpio_periph.c.obj
+[6/110] Building C object esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/xt_trax.c.obj
+[7/110] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/interrupts.c.obj
+[8/110] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/adc_periph.c.obj
+[9/110] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/uart_periph.c.obj
+[10/110] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/dedic_gpio_periph.c.obj
+[11/110] Building C object CMakeFiles/bootloader.elf.dir/project_elf_src_esp32s3.c.obj
+[12/110] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/gdma_periph.c.obj
+[13/110] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/ledc_periph.c.obj
+[14/110] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/spi_periph.c.obj
+[15/110] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/pcnt_periph.c.obj
+[16/110] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/rmt_periph.c.obj
+[17/110] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/sdm_periph.c.obj
+[18/110] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/i2s_periph.c.obj
+[19/110] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/temperature_sensor_periph.c.obj
+[20/110] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/timer_periph.c.obj
+[21/110] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/lcd_periph.c.obj
+[22/110] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/i2c_periph.c.obj
+[23/110] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/mcpwm_periph.c.obj
+[24/110] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/sdmmc_periph.c.obj
+[25/110] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/twai_periph.c.obj
+[26/110] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/usb_periph.c.obj
+[27/110] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/touch_sensor_periph.c.obj
+[28/110] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/rtc_io_periph.c.obj
+[29/110] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/usb_otg_periph.c.obj
+[30/110] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/mpu_hal.c.obj
+[31/110] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/efuse_hal.c.obj
+[32/110] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/mmu_hal.c.obj
+[33/110] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32s3/efuse_hal.c.obj
+[34/110] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/cache_hal.c.obj
+[35/110] Building C object esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.obj
+[36/110] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_wrap.c.obj
+[37/110] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_mem.c.obj
+[38/110] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/efuse_controller/keys/with_key_purposes/esp_efuse_api_key.c.obj
+[39/110] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/bootloader_start.c.obj
+[40/110] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_clock_init.c.obj
+[41/110] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_random.c.obj
+[42/110] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_random_esp32s3.c.obj
+[43/110] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_efuse.c.obj
+[44/110] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/secure_boot.c.obj
+[45/110] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_common.c.obj
+[46/110] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/flash_encrypt.c.obj
+[47/110] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_common_loader.c.obj
+[48/110] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/flash_partitions.c.obj
+[49/110] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_clock_loader.c.obj
+[50/110] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_console.c.obj
+[51/110] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_console_loader.c.obj
+[52/110] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_init.c.obj
+[53/110] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/flash_qio_mode.c.obj
+[54/110] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/bootloader_flash_config_esp32s3.c.obj
+[55/110] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/bootloader_flash.c.obj
+[56/110] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp32s3/bootloader_sha.c.obj
+[57/110] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp32s3/bootloader_soc.c.obj
+[58/110] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_panic.c.obj
+[59/110] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_utility.c.obj
+[60/110] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_fields.c.obj
+[61/110] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_table.c.obj
+[62/110] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp32s3/bootloader_esp32s3.c.obj
+[63/110] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_fields.c.obj
+[64/110] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_rtc_calib.c.obj
+[65/110] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_err.c.obj
+[66/110] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/esp_memory_utils.c.obj
+[67/110] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/cpu_region_protect.c.obj
+[68/110] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp_image_format.c.obj
+[69/110] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/cpu.c.obj
+[70/110] Building C object esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/uECC_verify_antifault.c.obj
+[71/110] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_utility.c.obj
+[72/110] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_api.c.obj
+[73/110] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk_init.c.obj
+[74/110] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/chip_info.c.obj
+[75/110] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_crc.c.obj
+[76/110] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_sys.c.obj
+[77/110] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_efuse.c.obj
+[78/110] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_uart.c.obj
+[79/110] Building ASM object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_longjmp.S.obj
+[80/110] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_time.c.obj
+[81/110] Building C object esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/esp_err_to_name.c.obj
+[82/110] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_spiflash.c.obj
+[83/110] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_systimer.c.obj
+[84/110] Building ASM object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_cache_writeback_esp32s3.S.obj
+[85/110] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_sleep.c.obj
+[86/110] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_wdt.c.obj
+[87/110] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_cache_esp32s2_esp32s3.c.obj
+[88/110] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/log_noos.c.obj
+[89/110] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_utility.c.obj
+[90/110] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk.c.obj
+[91/110] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/log.c.obj
+[92/110] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_init.c.obj
+[93/110] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/log_buffers.c.obj
+[94/110] Linking C static library esp-idf/log/liblog.a
+[95/110] Linking C static library esp-idf/esp_rom/libesp_rom.a
+[96/110] Linking C static library esp-idf/esp_common/libesp_common.a
+[97/110] Linking C static library esp-idf/esp_hw_support/libesp_hw_support.a
+[98/110] Linking C static library esp-idf/esp_system/libesp_system.a
+[99/110] Linking C static library esp-idf/efuse/libefuse.a
+[100/110] Linking C static library esp-idf/bootloader_support/libbootloader_support.a
+[101/110] Linking C static library esp-idf/esp_app_format/libesp_app_format.a
+[102/110] Linking C static library esp-idf/spi_flash/libspi_flash.a
+[103/110] Linking C static library esp-idf/hal/libhal.a
+[104/110] Linking C static library esp-idf/micro-ecc/libmicro-ecc.a
+[105/110] Linking C static library esp-idf/soc/libsoc.a
+[106/110] Linking C static library esp-idf/xtensa/libxtensa.a
+[107/110] Linking C static library esp-idf/main/libmain.a
+[108/110] Linking C executable bootloader.elf
+[109/110] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32s3 image...
+Merged 1 ELF section
+Successfully created esp32s3 image.
+Generated /home/tzion/Projects/cyclone/components/icm20608_driver/example/build/bootloader/bootloader.bin
+[110/110] cd /home/tzion/Projects/cyclone/components/icm20608_driver/example/build/bootloader/esp-idf/esptool_py && /home/tzion/.espressif/python_env/idf5.1_py3.8_env/bin/python /home/tzion/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/tzion/Projects/cyclone/components/icm20608_driver/example/build/bootloader/bootloader.bin
+Bootloader binary size 0x51c0 bytes. 0x2e40 bytes (36%) free.
+[494/518] Linking CXX static library esp-idf/mbedtls/mbedtls/library/libmbedtls.a
+[495/518] No install step for 'bootloader'
+[496/518] Linking CXX static library esp-idf/mbedtls/mbedtls/3rdparty/p256-m/libp256m.a
+[497/518] Linking CXX static library esp-idf/mbedtls/mbedtls/3rdparty/everest/libeverest.a
+[498/518] Completed 'bootloader'
+[499/518] Generating x509_crt_bundle
+[500/518] Generating ../../x509_crt_bundle.S
+[501/518] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj 
+/home/tzion/.espressif/tools/xtensa-esp32s3-elf/esp-12.2.0_20230208/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.1.2-dirty\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -Iconfig -I/home/tzion/Projects/cyclone/components/icm20608_driver/include -I/home/tzion/esp/esp-idf/components/newlib/platform_include -I/home/tzion/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/tzion/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/tzion/esp/esp-idf/components/freertos/esp_additions/include/freertos -I/home/tzion/esp/esp-idf/components/freertos/esp_additions/include -I/home/tzion/esp/esp-idf/components/freertos/esp_additions/arch/xtensa/include -I/home/tzion/esp/esp-idf/components/esp_hw_support/include -I/home/tzion/esp/esp-idf/components/esp_hw_support/include/soc -I/home/tzion/esp/esp-idf/components/esp_hw_support/include/soc/esp32s3 -I/home/tzion/esp/esp-idf/components/esp_hw_support/port/esp32s3/. -I/home/tzion/esp/esp-idf/components/esp_hw_support/port/esp32s3/private_include -I/home/tzion/esp/esp-idf/components/heap/include -I/home/tzion/esp/esp-idf/components/log/include -I/home/tzion/esp/esp-idf/components/soc/include -I/home/tzion/esp/esp-idf/components/soc/esp32s3 -I/home/tzion/esp/esp-idf/components/soc/esp32s3/include -I/home/tzion/esp/esp-idf/components/hal/esp32s3/include -I/home/tzion/esp/esp-idf/components/hal/include -I/home/tzion/esp/esp-idf/components/hal/platform_port/include -I/home/tzion/esp/esp-idf/components/esp_rom/include -I/home/tzion/esp/esp-idf/components/esp_rom/include/esp32s3 -I/home/tzion/esp/esp-idf/components/esp_rom/esp32s3 -I/home/tzion/esp/esp-idf/components/esp_common/include -I/home/tzion/esp/esp-idf/components/esp_system/include -I/home/tzion/esp/esp-idf/components/esp_system/port/soc -I/home/tzion/esp/esp-idf/components/esp_system/port/include/private -I/home/tzion/esp/esp-idf/components/xtensa/include -I/home/tzion/esp/esp-idf/components/xtensa/esp32s3/include -I/home/tzion/esp/esp-idf/components/driver/include -I/home/tzion/esp/esp-idf/components/driver/deprecated -I/home/tzion/esp/esp-idf/components/driver/analog_comparator/include -I/home/tzion/esp/esp-idf/components/driver/dac/include -I/home/tzion/esp/esp-idf/components/driver/gpio/include -I/home/tzion/esp/esp-idf/components/driver/gptimer/include -I/home/tzion/esp/esp-idf/components/driver/i2c/include -I/home/tzion/esp/esp-idf/components/driver/i2s/include -I/home/tzion/esp/esp-idf/components/driver/ledc/include -I/home/tzion/esp/esp-idf/components/driver/mcpwm/include -I/home/tzion/esp/esp-idf/components/driver/parlio/include -I/home/tzion/esp/esp-idf/components/driver/pcnt/include -I/home/tzion/esp/esp-idf/components/driver/rmt/include -I/home/tzion/esp/esp-idf/components/driver/sdio_slave/include -I/home/tzion/esp/esp-idf/components/driver/sdmmc/include -I/home/tzion/esp/esp-idf/components/driver/sigma_delta/include -I/home/tzion/esp/esp-idf/components/driver/spi/include -I/home/tzion/esp/esp-idf/components/driver/temperature_sensor/include -I/home/tzion/esp/esp-idf/components/driver/touch_sensor/include -I/home/tzion/esp/esp-idf/components/driver/twai/include -I/home/tzion/esp/esp-idf/components/driver/uart/include -I/home/tzion/esp/esp-idf/components/driver/usb_serial_jtag/include -I/home/tzion/esp/esp-idf/components/driver/touch_sensor/esp32s3/include -I/home/tzion/esp/esp-idf/components/esp_pm/include -I/home/tzion/esp/esp-idf/components/esp_ringbuf/include -I/home/tzion/Projects/cyclone/components/i2c_helper/include -mlongcalls    -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fmacro-prefix-map=/home/tzion/Projects/cyclone/components/icm20608_driver/example=. -fmacro-prefix-map=/home/tzion/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu17 -Wno-old-style-declaration --coverage -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj   -c ../main/main.c
+../main/main.c:1:10: fatal error: icm_20608_driver.c: No such file or directory
+    1 | #include "icm_20608_driver.c"
+      |          ^~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+[502/518] Building C object esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/eri.c.obj
+[503/518] Building ASM object esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/xtensa_intr_asm.S.obj
+[504/518] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c.obj 
+/home/tzion/.espressif/tools/xtensa-esp32s3-elf/esp-12.2.0_20230208/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.1.2-dirty\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -Iconfig -I/home/tzion/Projects/cyclone/components/icm20608_driver/include -I/home/tzion/esp/esp-idf/components/newlib/platform_include -I/home/tzion/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/tzion/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/tzion/esp/esp-idf/components/freertos/esp_additions/include/freertos -I/home/tzion/esp/esp-idf/components/freertos/esp_additions/include -I/home/tzion/esp/esp-idf/components/freertos/esp_additions/arch/xtensa/include -I/home/tzion/esp/esp-idf/components/esp_hw_support/include -I/home/tzion/esp/esp-idf/components/esp_hw_support/include/soc -I/home/tzion/esp/esp-idf/components/esp_hw_support/include/soc/esp32s3 -I/home/tzion/esp/esp-idf/components/esp_hw_support/port/esp32s3/. -I/home/tzion/esp/esp-idf/components/esp_hw_support/port/esp32s3/private_include -I/home/tzion/esp/esp-idf/components/heap/include -I/home/tzion/esp/esp-idf/components/log/include -I/home/tzion/esp/esp-idf/components/soc/include -I/home/tzion/esp/esp-idf/components/soc/esp32s3 -I/home/tzion/esp/esp-idf/components/soc/esp32s3/include -I/home/tzion/esp/esp-idf/components/hal/esp32s3/include -I/home/tzion/esp/esp-idf/components/hal/include -I/home/tzion/esp/esp-idf/components/hal/platform_port/include -I/home/tzion/esp/esp-idf/components/esp_rom/include -I/home/tzion/esp/esp-idf/components/esp_rom/include/esp32s3 -I/home/tzion/esp/esp-idf/components/esp_rom/esp32s3 -I/home/tzion/esp/esp-idf/components/esp_common/include -I/home/tzion/esp/esp-idf/components/esp_system/include -I/home/tzion/esp/esp-idf/components/esp_system/port/soc -I/home/tzion/esp/esp-idf/components/esp_system/port/include/private -I/home/tzion/esp/esp-idf/components/xtensa/include -I/home/tzion/esp/esp-idf/components/xtensa/esp32s3/include -I/home/tzion/esp/esp-idf/components/driver/include -I/home/tzion/esp/esp-idf/components/driver/deprecated -I/home/tzion/esp/esp-idf/components/driver/analog_comparator/include -I/home/tzion/esp/esp-idf/components/driver/dac/include -I/home/tzion/esp/esp-idf/components/driver/gpio/include -I/home/tzion/esp/esp-idf/components/driver/gptimer/include -I/home/tzion/esp/esp-idf/components/driver/i2c/include -I/home/tzion/esp/esp-idf/components/driver/i2s/include -I/home/tzion/esp/esp-idf/components/driver/ledc/include -I/home/tzion/esp/esp-idf/components/driver/mcpwm/include -I/home/tzion/esp/esp-idf/components/driver/parlio/include -I/home/tzion/esp/esp-idf/components/driver/pcnt/include -I/home/tzion/esp/esp-idf/components/driver/rmt/include -I/home/tzion/esp/esp-idf/components/driver/sdio_slave/include -I/home/tzion/esp/esp-idf/components/driver/sdmmc/include -I/home/tzion/esp/esp-idf/components/driver/sigma_delta/include -I/home/tzion/esp/esp-idf/components/driver/spi/include -I/home/tzion/esp/esp-idf/components/driver/temperature_sensor/include -I/home/tzion/esp/esp-idf/components/driver/touch_sensor/include -I/home/tzion/esp/esp-idf/components/driver/twai/include -I/home/tzion/esp/esp-idf/components/driver/uart/include -I/home/tzion/esp/esp-idf/components/driver/usb_serial_jtag/include -I/home/tzion/esp/esp-idf/components/driver/touch_sensor/esp32s3/include -I/home/tzion/esp/esp-idf/components/esp_pm/include -I/home/tzion/esp/esp-idf/components/esp_ringbuf/include -I/home/tzion/Projects/cyclone/components/i2c_helper/include -mlongcalls    -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fmacro-prefix-map=/home/tzion/Projects/cyclone/components/icm20608_driver/example=. -fmacro-prefix-map=/home/tzion/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu17 -Wno-old-style-declaration --coverage -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c.obj   -c /home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c
+In file included from /home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c:1:
+/home/tzion/Projects/cyclone/components/icm20608_driver/include/icm20608_driver.h:44:9: error: unknown type name 'uint8_t'
+   44 |         uint8_t addressi = ICM20608_DEFAULT_ADDR;
+      |         ^~~~~~~
+/home/tzion/Projects/cyclone/components/icm20608_driver/include/icm20608_driver.h:44:26: error: expected ':', ',', ';', '}' or '__attribute__' before '=' token
+   44 |         uint8_t addressi = ICM20608_DEFAULT_ADDR;
+      |                          ^
+In file included from /home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c:2:
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:4:1: error: unknown type name 'esp_err_t'
+    4 | esp_err_t i2c_helper_init(const i2c_config_t* config, i2c_port_t i2c_port_t);
+      | ^~~~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:4:33: error: unknown type name 'i2c_config_t'
+    4 | esp_err_t i2c_helper_init(const i2c_config_t* config, i2c_port_t i2c_port_t);
+      |                                 ^~~~~~~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:4:55: error: unknown type name 'i2c_port_t'
+    4 | esp_err_t i2c_helper_init(const i2c_config_t* config, i2c_port_t i2c_port_t);
+      |                                                       ^~~~~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:6:1: error: unknown type name 'esp_err_t'
+    6 | esp_err_t i2c_helper_read_bytes(i2c_port_t i2c_port, uint8_t device_address, uint8_t reg_address, uint8_t length, uint8_t* p_read_buf);
+      | ^~~~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:6:33: error: unknown type name 'i2c_port_t'
+    6 | esp_err_t i2c_helper_read_bytes(i2c_port_t i2c_port, uint8_t device_address, uint8_t reg_address, uint8_t length, uint8_t* p_read_buf);
+      |                                 ^~~~~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:6:54: error: unknown type name 'uint8_t'
+    6 | esp_err_t i2c_helper_read_bytes(i2c_port_t i2c_port, uint8_t device_address, uint8_t reg_address, uint8_t length, uint8_t* p_read_buf);
+      |                                                      ^~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:1:1: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+  +++ |+#include <stdint.h>
+    1 | #ifndef I2C_HELPER_H
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:6:78: error: unknown type name 'uint8_t'
+    6 | esp_err_t i2c_helper_read_bytes(i2c_port_t i2c_port, uint8_t device_address, uint8_t reg_address, uint8_t length, uint8_t* p_read_buf);
+      |                                                                              ^~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:6:78: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:6:99: error: unknown type name 'uint8_t'
+    6 | esp_err_t i2c_helper_read_bytes(i2c_port_t i2c_port, uint8_t device_address, uint8_t reg_address, uint8_t length, uint8_t* p_read_buf);
+      |                                                                                                   ^~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:6:99: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:6:115: error: unknown type name 'uint8_t'
+    6 | esp_err_t i2c_helper_read_bytes(i2c_port_t i2c_port, uint8_t device_address, uint8_t reg_address, uint8_t length, uint8_t* p_read_buf);
+      |                                                                                                                   ^~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:6:115: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:8:1: error: unknown type name 'esp_err_t'
+    8 | esp_err_t i2c_helper_write_bytes(i2c_port_t i2c_port, uint8_t device_address, uint8_t reg_address, uint8_t length, uint8_t* p_write_buf);
+      | ^~~~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:8:34: error: unknown type name 'i2c_port_t'
+    8 | esp_err_t i2c_helper_write_bytes(i2c_port_t i2c_port, uint8_t device_address, uint8_t reg_address, uint8_t length, uint8_t* p_write_buf);
+      |                                  ^~~~~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:8:55: error: unknown type name 'uint8_t'
+    8 | esp_err_t i2c_helper_write_bytes(i2c_port_t i2c_port, uint8_t device_address, uint8_t reg_address, uint8_t length, uint8_t* p_write_buf);
+      |                                                       ^~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:8:55: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:8:79: error: unknown type name 'uint8_t'
+    8 | esp_err_t i2c_helper_write_bytes(i2c_port_t i2c_port, uint8_t device_address, uint8_t reg_address, uint8_t length, uint8_t* p_write_buf);
+      |                                                                               ^~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:8:79: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:8:100: error: unknown type name 'uint8_t'
+    8 | esp_err_t i2c_helper_write_bytes(i2c_port_t i2c_port, uint8_t device_address, uint8_t reg_address, uint8_t length, uint8_t* p_write_buf);
+      |                                                                                                    ^~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:8:100: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:8:116: error: unknown type name 'uint8_t'
+    8 | esp_err_t i2c_helper_write_bytes(i2c_port_t i2c_port, uint8_t device_address, uint8_t reg_address, uint8_t length, uint8_t* p_write_buf);
+      |                                                                                                                    ^~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:8:116: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:10:1: error: unknown type name 'esp_err_t'
+   10 | esp_err_t i2c_helper_write_byte(i2c_port_t i2c_port, uint8_t device_address, uint8_t reg_address, uint8_t* p_write_buf);
+      | ^~~~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:10:33: error: unknown type name 'i2c_port_t'
+   10 | esp_err_t i2c_helper_write_byte(i2c_port_t i2c_port, uint8_t device_address, uint8_t reg_address, uint8_t* p_write_buf);
+      |                                 ^~~~~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:10:54: error: unknown type name 'uint8_t'
+   10 | esp_err_t i2c_helper_write_byte(i2c_port_t i2c_port, uint8_t device_address, uint8_t reg_address, uint8_t* p_write_buf);
+      |                                                      ^~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:10:54: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:10:78: error: unknown type name 'uint8_t'
+   10 | esp_err_t i2c_helper_write_byte(i2c_port_t i2c_port, uint8_t device_address, uint8_t reg_address, uint8_t* p_write_buf);
+      |                                                                              ^~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:10:78: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:10:99: error: unknown type name 'uint8_t'
+   10 | esp_err_t i2c_helper_write_byte(i2c_port_t i2c_port, uint8_t device_address, uint8_t reg_address, uint8_t* p_write_buf);
+      |                                                                                                   ^~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:10:99: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:1: error: unterminated #ifndef
+    1 | #ifndef I2C_HELPER_H
+      | 
+/home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c: In function 'icm20608_init':
+/home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c:6:9: error: unknown type name 'uint8_t'
+    6 |         uint8_t msg = 1;
+      |         ^~~~~~~
+/home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c:3:1: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+    2 | #include "i2c_helper.h"
+  +++ |+#include <stdint.h>
+    3 | 
+/home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c:7:9: error: implicit declaration of function 'i2c_helper_write_bytes' [-Werror=implicit-function-declaration]
+    7 |         i2c_helper_write_bytes(imu_config->i2c_port, imu_config->address, PWR_MGMT_1_R, 1, &msg);
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+/home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c:7:42: error: 'imu_config_t' has no member named 'i2c_port'
+    7 |         i2c_helper_write_bytes(imu_config->i2c_port, imu_config->address, PWR_MGMT_1_R, 1, &msg);
+      |                                          ^~
+/home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c:7:64: error: 'imu_config_t' has no member named 'address'
+    7 |         i2c_helper_write_bytes(imu_config->i2c_port, imu_config->address, PWR_MGMT_1_R, 1, &msg);
+      |                                                                ^~
+/home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c:9:42: error: 'imu_config_t' has no member named 'i2c_port'
+    9 |         i2c_helper_write_bytes(imu_config->i2c_port, imu_config->address, PWR_MGMT_2_R, 1, &msg);
+      |                                          ^~
+/home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c:9:64: error: 'imu_config_t' has no member named 'address'
+    9 |         i2c_helper_write_bytes(imu_config->i2c_port, imu_config->address, PWR_MGMT_2_R, 1, &msg);
+      |                                                                ^~
+/home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c:11:42: error: 'imu_config_t' has no member named 'i2c_port'
+   11 |         i2c_helper_write_bytes(imu_config->i2c_port, imu_config->address, CONFIG_R, 1, &msg);
+      |                                          ^~
+/home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c:11:64: error: 'imu_config_t' has no member named 'address'
+   11 |         i2c_helper_write_bytes(imu_config->i2c_port, imu_config->address, CONFIG_R, 1, &msg);
+      |                                                                ^~
+/home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c:13:42: error: 'imu_config_t' has no member named 'i2c_port'
+   13 |         i2c_helper_write_bytes(imu_config->i2c_port, imu_config->address, GYRO_CONFIG_R, 1, &msg);
+      |                                          ^~
+/home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c:13:64: error: 'imu_config_t' has no member named 'address'
+   13 |         i2c_helper_write_bytes(imu_config->i2c_port, imu_config->address, GYRO_CONFIG_R, 1, &msg);
+      |                                                                ^~
+/home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c:15:42: error: 'imu_config_t' has no member named 'i2c_port'
+   15 |         i2c_helper_write_bytes(imu_config->i2c_port, imu_config->address, ACCEL_CONFIG_1_R, 1, &msg);
+      |                                          ^~
+/home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c:15:64: error: 'imu_config_t' has no member named 'address'
+   15 |         i2c_helper_write_bytes(imu_config->i2c_port, imu_config->address, ACCEL_CONFIG_1_R, 1, &msg);
+      |                                                                ^~
+/home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c:15:75: error: 'ACCEL_CONFIG_1_R' undeclared (first use in this function); did you mean 'ACC_CONFIG_1_R'?
+   15 |         i2c_helper_write_bytes(imu_config->i2c_port, imu_config->address, ACCEL_CONFIG_1_R, 1, &msg);
+      |                                                                           ^~~~~~~~~~~~~~~~
+      |                                                                           ACC_CONFIG_1_R
+/home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c:15:75: note: each undeclared identifier is reported only once for each function it appears in
+/home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c:16:42: error: 'imu_config_t' has no member named 'i2c_port'
+   16 |         i2c_helper_write_bytes(imu_config->i2c_port, imu_config->address, ACCEL_CONFIG_2_R, 1, &msg);
+      |                                          ^~
+/home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c:16:64: error: 'imu_config_t' has no member named 'address'
+   16 |         i2c_helper_write_bytes(imu_config->i2c_port, imu_config->address, ACCEL_CONFIG_2_R, 1, &msg);
+      |                                                                ^~
+/home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c:16:75: error: 'ACCEL_CONFIG_2_R' undeclared (first use in this function); did you mean 'ACC_CONFIG_2_R'?
+   16 |         i2c_helper_write_bytes(imu_config->i2c_port, imu_config->address, ACCEL_CONFIG_2_R, 1, &msg);
+      |                                                                           ^~~~~~~~~~~~~~~~
+      |                                                                           ACC_CONFIG_2_R
+/home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c: At top level:
+/home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c:20:1: error: unknown type name 'uint8_t'
+   20 | uint8_t icm20608_whoami(imu_config_t* imu_config)
+      | ^~~~~~~
+/home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c:20:1: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c:20:9: error: conflicting types for 'icm20608_whoami'; have 'int(imu_config_t *)'
+   20 | uint8_t icm20608_whoami(imu_config_t* imu_config)
+      |         ^~~~~~~~~~~~~~~
+/home/tzion/Projects/cyclone/components/icm20608_driver/include/icm20608_driver.h:59:6: note: previous declaration of 'icm20608_whoami' with type 'void(imu_config_t *)'
+   59 | void icm20608_whoami(imu_config_t* imu_config);
+      |      ^~~~~~~~~~~~~~~
+/home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c: In function 'icm20608_whoami':
+/home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c:22:9: error: unknown type name 'uint8_t'
+   22 |         uint8_t tx_data = WHO_AM_I_R;
+      |         ^~~~~~~
+/home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c:22:9: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c:23:9: error: unknown type name 'uint8_t'
+   23 |         uint8_t* rx_data;
+      |         ^~~~~~~
+/home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c:23:9: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c:24:9: error: implicit declaration of function 'i2c_master_write_read_device' [-Werror=implicit-function-declaration]
+   24 |         i2c_master_write_read_device(imu_config->i2c_port, imu_config->address, &tx_data, 1, rx_data, 1, DEFAULT_TIMEOUT_TICKS);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c:24:48: error: 'imu_config_t' has no member named 'i2c_port'
+   24 |         i2c_master_write_read_device(imu_config->i2c_port, imu_config->address, &tx_data, 1, rx_data, 1, DEFAULT_TIMEOUT_TICKS);
+      |                                                ^~
+/home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c:24:70: error: 'imu_config_t' has no member named 'address'
+   24 |         i2c_master_write_read_device(imu_config->i2c_port, imu_config->address, &tx_data, 1, rx_data, 1, DEFAULT_TIMEOUT_TICKS);
+      |                                                                      ^~
+/home/tzion/Projects/cyclone/components/icm20608_driver/include/icm20608_driver.h:34:38: error: 'portTICK_PERIOD_MS' undeclared (first use in this function)
+   34 | #define DEFAULT_TIMEOUT_TICKS (1000/ portTICK_PERIOD_MS)
+      |                                      ^~~~~~~~~~~~~~~~~~
+/home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c:24:106: note: in expansion of macro 'DEFAULT_TIMEOUT_TICKS'
+   24 |         i2c_master_write_read_device(imu_config->i2c_port, imu_config->address, &tx_data, 1, rx_data, 1, DEFAULT_TIMEOUT_TICKS);
+      |                                                                                                          ^~~~~~~~~~~~~~~~~~~~~
+/home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c: At top level:
+/home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c:28:52: error: unknown type name 'uint16_t'
+   28 | void icm20608_get_motion_raw(imu_config_t* config, uint16_t gyro_readings[3], uint16_t acc_readings[3])
+      |                                                    ^~~~~~~~
+/home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c:28:52: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c:28:79: error: unknown type name 'uint16_t'
+   28 | void icm20608_get_motion_raw(imu_config_t* config, uint16_t gyro_readings[3], uint16_t acc_readings[3])
+      |                                                                               ^~~~~~~~
+/home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c:28:79: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c: In function 'icm20608_get_motion_scaled':
+/home/tzion/Projects/cyclone/components/icm20608_driver/icm_20608_driver.c:51:9: error: implicit declaration of function 'icm20608_get_motion_raw'; did you mean 'icm20608_get_motion'? [-Werror=implicit-function-declaration]
+   51 |         icm20608_get_motion_raw(config, gyro_readings, acc_readings);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+      |         icm20608_get_motion
+cc1: some warnings being treated as errors
+[505/518] Building C object esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/xt_trax.c.obj
+[506/518] Building ASM object esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/__/__/x509_crt_bundle.S.obj
+[507/518] Building C object esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/xtensa_intr.c.obj
+[508/518] Building C object esp-idf/i2c_helper/CMakeFiles/__idf_i2c_helper.dir/i2c_helper.c.obj
+FAILED: esp-idf/i2c_helper/CMakeFiles/__idf_i2c_helper.dir/i2c_helper.c.obj 
+/home/tzion/.espressif/tools/xtensa-esp32s3-elf/esp-12.2.0_20230208/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.1.2-dirty\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -Iconfig -I/home/tzion/Projects/cyclone/components/i2c_helper/include -I/home/tzion/esp/esp-idf/components/newlib/platform_include -I/home/tzion/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/tzion/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/tzion/esp/esp-idf/components/freertos/esp_additions/include/freertos -I/home/tzion/esp/esp-idf/components/freertos/esp_additions/include -I/home/tzion/esp/esp-idf/components/freertos/esp_additions/arch/xtensa/include -I/home/tzion/esp/esp-idf/components/esp_hw_support/include -I/home/tzion/esp/esp-idf/components/esp_hw_support/include/soc -I/home/tzion/esp/esp-idf/components/esp_hw_support/include/soc/esp32s3 -I/home/tzion/esp/esp-idf/components/esp_hw_support/port/esp32s3/. -I/home/tzion/esp/esp-idf/components/esp_hw_support/port/esp32s3/private_include -I/home/tzion/esp/esp-idf/components/heap/include -I/home/tzion/esp/esp-idf/components/log/include -I/home/tzion/esp/esp-idf/components/soc/include -I/home/tzion/esp/esp-idf/components/soc/esp32s3 -I/home/tzion/esp/esp-idf/components/soc/esp32s3/include -I/home/tzion/esp/esp-idf/components/hal/esp32s3/include -I/home/tzion/esp/esp-idf/components/hal/include -I/home/tzion/esp/esp-idf/components/hal/platform_port/include -I/home/tzion/esp/esp-idf/components/esp_rom/include -I/home/tzion/esp/esp-idf/components/esp_rom/include/esp32s3 -I/home/tzion/esp/esp-idf/components/esp_rom/esp32s3 -I/home/tzion/esp/esp-idf/components/esp_common/include -I/home/tzion/esp/esp-idf/components/esp_system/include -I/home/tzion/esp/esp-idf/components/esp_system/port/soc -I/home/tzion/esp/esp-idf/components/esp_system/port/include/private -I/home/tzion/esp/esp-idf/components/xtensa/include -I/home/tzion/esp/esp-idf/components/xtensa/esp32s3/include -I/home/tzion/esp/esp-idf/components/driver/include -I/home/tzion/esp/esp-idf/components/driver/deprecated -I/home/tzion/esp/esp-idf/components/driver/analog_comparator/include -I/home/tzion/esp/esp-idf/components/driver/dac/include -I/home/tzion/esp/esp-idf/components/driver/gpio/include -I/home/tzion/esp/esp-idf/components/driver/gptimer/include -I/home/tzion/esp/esp-idf/components/driver/i2c/include -I/home/tzion/esp/esp-idf/components/driver/i2s/include -I/home/tzion/esp/esp-idf/components/driver/ledc/include -I/home/tzion/esp/esp-idf/components/driver/mcpwm/include -I/home/tzion/esp/esp-idf/components/driver/parlio/include -I/home/tzion/esp/esp-idf/components/driver/pcnt/include -I/home/tzion/esp/esp-idf/components/driver/rmt/include -I/home/tzion/esp/esp-idf/components/driver/sdio_slave/include -I/home/tzion/esp/esp-idf/components/driver/sdmmc/include -I/home/tzion/esp/esp-idf/components/driver/sigma_delta/include -I/home/tzion/esp/esp-idf/components/driver/spi/include -I/home/tzion/esp/esp-idf/components/driver/temperature_sensor/include -I/home/tzion/esp/esp-idf/components/driver/touch_sensor/include -I/home/tzion/esp/esp-idf/components/driver/twai/include -I/home/tzion/esp/esp-idf/components/driver/uart/include -I/home/tzion/esp/esp-idf/components/driver/usb_serial_jtag/include -I/home/tzion/esp/esp-idf/components/driver/touch_sensor/esp32s3/include -I/home/tzion/esp/esp-idf/components/esp_pm/include -I/home/tzion/esp/esp-idf/components/esp_ringbuf/include -mlongcalls    -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fmacro-prefix-map=/home/tzion/Projects/cyclone/components/icm20608_driver/example=. -fmacro-prefix-map=/home/tzion/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/i2c_helper/CMakeFiles/__idf_i2c_helper.dir/i2c_helper.c.obj -MF esp-idf/i2c_helper/CMakeFiles/__idf_i2c_helper.dir/i2c_helper.c.obj.d -o esp-idf/i2c_helper/CMakeFiles/__idf_i2c_helper.dir/i2c_helper.c.obj   -c /home/tzion/Projects/cyclone/components/i2c_helper/i2c_helper.c
+In file included from /home/tzion/Projects/cyclone/components/i2c_helper/i2c_helper.c:1:
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:4:1: error: unknown type name 'esp_err_t'
+    4 | esp_err_t i2c_helper_init(const i2c_config_t* config, i2c_port_t i2c_port_t);
+      | ^~~~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:4:33: error: unknown type name 'i2c_config_t'
+    4 | esp_err_t i2c_helper_init(const i2c_config_t* config, i2c_port_t i2c_port_t);
+      |                                 ^~~~~~~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:4:55: error: unknown type name 'i2c_port_t'
+    4 | esp_err_t i2c_helper_init(const i2c_config_t* config, i2c_port_t i2c_port_t);
+      |                                                       ^~~~~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:6:1: error: unknown type name 'esp_err_t'
+    6 | esp_err_t i2c_helper_read_bytes(i2c_port_t i2c_port, uint8_t device_address, uint8_t reg_address, uint8_t length, uint8_t* p_read_buf);
+      | ^~~~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:6:33: error: unknown type name 'i2c_port_t'
+    6 | esp_err_t i2c_helper_read_bytes(i2c_port_t i2c_port, uint8_t device_address, uint8_t reg_address, uint8_t length, uint8_t* p_read_buf);
+      |                                 ^~~~~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:6:54: error: unknown type name 'uint8_t'
+    6 | esp_err_t i2c_helper_read_bytes(i2c_port_t i2c_port, uint8_t device_address, uint8_t reg_address, uint8_t length, uint8_t* p_read_buf);
+      |                                                      ^~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:1:1: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+  +++ |+#include <stdint.h>
+    1 | #ifndef I2C_HELPER_H
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:6:78: error: unknown type name 'uint8_t'
+    6 | esp_err_t i2c_helper_read_bytes(i2c_port_t i2c_port, uint8_t device_address, uint8_t reg_address, uint8_t length, uint8_t* p_read_buf);
+      |                                                                              ^~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:6:78: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:6:99: error: unknown type name 'uint8_t'
+    6 | esp_err_t i2c_helper_read_bytes(i2c_port_t i2c_port, uint8_t device_address, uint8_t reg_address, uint8_t length, uint8_t* p_read_buf);
+      |                                                                                                   ^~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:6:99: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:6:115: error: unknown type name 'uint8_t'
+    6 | esp_err_t i2c_helper_read_bytes(i2c_port_t i2c_port, uint8_t device_address, uint8_t reg_address, uint8_t length, uint8_t* p_read_buf);
+      |                                                                                                                   ^~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:6:115: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:8:1: error: unknown type name 'esp_err_t'
+    8 | esp_err_t i2c_helper_write_bytes(i2c_port_t i2c_port, uint8_t device_address, uint8_t reg_address, uint8_t length, uint8_t* p_write_buf);
+      | ^~~~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:8:34: error: unknown type name 'i2c_port_t'
+    8 | esp_err_t i2c_helper_write_bytes(i2c_port_t i2c_port, uint8_t device_address, uint8_t reg_address, uint8_t length, uint8_t* p_write_buf);
+      |                                  ^~~~~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:8:55: error: unknown type name 'uint8_t'
+    8 | esp_err_t i2c_helper_write_bytes(i2c_port_t i2c_port, uint8_t device_address, uint8_t reg_address, uint8_t length, uint8_t* p_write_buf);
+      |                                                       ^~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:8:55: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:8:79: error: unknown type name 'uint8_t'
+    8 | esp_err_t i2c_helper_write_bytes(i2c_port_t i2c_port, uint8_t device_address, uint8_t reg_address, uint8_t length, uint8_t* p_write_buf);
+      |                                                                               ^~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:8:79: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:8:100: error: unknown type name 'uint8_t'
+    8 | esp_err_t i2c_helper_write_bytes(i2c_port_t i2c_port, uint8_t device_address, uint8_t reg_address, uint8_t length, uint8_t* p_write_buf);
+      |                                                                                                    ^~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:8:100: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:8:116: error: unknown type name 'uint8_t'
+    8 | esp_err_t i2c_helper_write_bytes(i2c_port_t i2c_port, uint8_t device_address, uint8_t reg_address, uint8_t length, uint8_t* p_write_buf);
+      |                                                                                                                    ^~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:8:116: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:10:1: error: unknown type name 'esp_err_t'
+   10 | esp_err_t i2c_helper_write_byte(i2c_port_t i2c_port, uint8_t device_address, uint8_t reg_address, uint8_t* p_write_buf);
+      | ^~~~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:10:33: error: unknown type name 'i2c_port_t'
+   10 | esp_err_t i2c_helper_write_byte(i2c_port_t i2c_port, uint8_t device_address, uint8_t reg_address, uint8_t* p_write_buf);
+      |                                 ^~~~~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:10:54: error: unknown type name 'uint8_t'
+   10 | esp_err_t i2c_helper_write_byte(i2c_port_t i2c_port, uint8_t device_address, uint8_t reg_address, uint8_t* p_write_buf);
+      |                                                      ^~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:10:54: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:10:78: error: unknown type name 'uint8_t'
+   10 | esp_err_t i2c_helper_write_byte(i2c_port_t i2c_port, uint8_t device_address, uint8_t reg_address, uint8_t* p_write_buf);
+      |                                                                              ^~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:10:78: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:10:99: error: unknown type name 'uint8_t'
+   10 | esp_err_t i2c_helper_write_byte(i2c_port_t i2c_port, uint8_t device_address, uint8_t reg_address, uint8_t* p_write_buf);
+      |                                                                                                   ^~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:10:99: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/tzion/Projects/cyclone/components/i2c_helper/include/i2c_helper.h:1: error: unterminated #ifndef
+    1 | #ifndef I2C_HELPER_H
+      | 
+/home/tzion/Projects/cyclone/components/i2c_helper/i2c_helper.c: In function 'i2c_helper_read_bytes':
+/home/tzion/Projects/cyclone/components/i2c_helper/i2c_helper.c:15:76: error: 'ACK_CHECK_EN' undeclared (first use in this function)
+   15 |         i2c_master_write_byte(cmd, device_address << 1 | I2C_MASTER_WRITE, ACK_CHECK_EN);
+      |                                                                            ^~~~~~~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/i2c_helper.c:15:76: note: each undeclared identifier is reported only once for each function it appears in
+/home/tzion/Projects/cyclone/components/i2c_helper/i2c_helper.c:21:65: error: 'ACK_VAL' undeclared (first use in this function)
+   21 |                 i2c_master_read_byte(cmd, p_read_buf + counter, ACK_VAL);
+      |                                                                 ^~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/i2c_helper.c:23:48: error: 'counter' undeclared (first use in this function)
+   23 |         i2c_master_read_byte(cmd, p_read_buf + counter, NACK_VAL);
+      |                                                ^~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/i2c_helper.c:23:57: error: 'NACK_VAL' undeclared (first use in this function)
+   23 |         i2c_master_read_byte(cmd, p_read_buf + counter, NACK_VAL);
+      |                                                         ^~~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/i2c_helper.c: In function 'i2c_helper_write_bytes':
+/home/tzion/Projects/cyclone/components/i2c_helper/i2c_helper.c:35:59: error: stray '@' in program
+   35 |         i2c_master_write_byte(cmd, device_address << 1 | I@C_MASTER_WRITE, ACK_CHECK_EN);
+      |                                                           ^
+/home/tzion/Projects/cyclone/components/i2c_helper/i2c_helper.c:35:58: error: 'I' undeclared (first use in this function)
+   35 |         i2c_master_write_byte(cmd, device_address << 1 | I@C_MASTER_WRITE, ACK_CHECK_EN);
+      |                                                          ^
+/home/tzion/Projects/cyclone/components/i2c_helper/i2c_helper.c:35:59: error: expected ')' before 'C_MASTER_WRITE'
+   35 |         i2c_master_write_byte(cmd, device_address << 1 | I@C_MASTER_WRITE, ACK_CHECK_EN);
+      |                              ~                            ^~~~~~~~~~~~~~~
+      |                                                           )
+/home/tzion/Projects/cyclone/components/i2c_helper/i2c_helper.c:35:9: error: too few arguments to function 'i2c_master_write_byte'
+   35 |         i2c_master_write_byte(cmd, device_address << 1 | I@C_MASTER_WRITE, ACK_CHECK_EN);
+      |         ^~~~~~~~~~~~~~~~~~~~~
+In file included from /home/tzion/Projects/cyclone/components/i2c_helper/i2c_helper.c:2:
+/home/tzion/esp/esp-idf/components/driver/i2c/include/driver/i2c.h:324:11: note: declared here
+  324 | esp_err_t i2c_master_write_byte(i2c_cmd_handle_t cmd_handle, uint8_t data, bool ack_en);
+      |           ^~~~~~~~~~~~~~~~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/i2c_helper.c:36:49: error: 'ACK_CHECK_EN' undeclared (first use in this function)
+   36 |         i2c_master_write_byte(cmd, reg_address, ACK_CHECK_EN);
+      |                                                 ^~~~~~~~~~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/i2c_helper.c:37:36: warning: passing argument 2 of 'i2c_master_write_byte' makes integer from pointer without a cast [-Wint-conversion]
+   37 |         i2c_master_write_byte(cmd, p_write_buf, ACK_CHECK_EN);
+      |                                    ^~~~~~~~~~~
+      |                                    |
+      |                                    uint8_t * {aka unsigned char *}
+/home/tzion/esp/esp-idf/components/driver/i2c/include/driver/i2c.h:324:70: note: expected 'uint8_t' {aka 'unsigned char'} but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  324 | esp_err_t i2c_master_write_byte(i2c_cmd_handle_t cmd_handle, uint8_t data, bool ack_en);
+      |                                                              ~~~~~~~~^~~~
+/home/tzion/Projects/cyclone/components/i2c_helper/i2c_helper.c:38:9: error: implicit declaration of function 'i2c_mastter_stop'; did you mean 'i2c_master_stop'? [-Werror=implicit-function-declaration]
+   38 |         i2c_mastter_stop(cmd);
+      |         ^~~~~~~~~~~~~~~~
+      |         i2c_master_stop
+/home/tzion/Projects/cyclone/components/i2c_helper/i2c_helper.c: At top level:
+/home/tzion/Projects/cyclone/components/i2c_helper/i2c_helper.c:51:1: error: expected identifier or '(' before '{' token
+   51 | {
+      | ^
+/home/tzion/Projects/cyclone/components/i2c_helper/i2c_helper.c: In function 'i2c_helper_init':
+/home/tzion/Projects/cyclone/components/i2c_helper/i2c_helper.c:8:1: error: control reaches end of non-void function [-Werror=return-type]
+    8 | }
+      | ^
+cc1: some warnings being treated as errors
+[509/518] Building C object esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/esp_crt_bundle/esp_crt_bundle.c.obj
+ninja: build stopped: subcommand failed.

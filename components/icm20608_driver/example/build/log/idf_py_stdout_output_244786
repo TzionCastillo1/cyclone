@@ -1,0 +1,48 @@
+-- IDF_TARGET is not set, guessed 'esp32s3' from sdkconfig '/home/tzion/Projects/cyclone/components/icm20608_driver/example/sdkconfig'
+-- Found Git: /usr/bin/git (found version "2.25.1") 
+-- Component directory /home/tzion/Projects/cyclone/components/controller does not contain a CMakeLists.txt file. No component will be added
+-- Component directory /home/tzion/Projects/cyclone/components/motor_driver does not contain a CMakeLists.txt file. No component will be added
+-- Component directory /home/tzion/Projects/cyclone/components/vl53l1x_driver does not contain a CMakeLists.txt file. No component will be added
+-- The C compiler identification is GNU 12.2.0
+-- The CXX compiler identification is GNU 12.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /home/tzion/.espressif/tools/xtensa-esp32s3-elf/esp-12.2.0_20230208/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc
+-- Check for working C compiler: /home/tzion/.espressif/tools/xtensa-esp32s3-elf/esp-12.2.0_20230208/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc
+-- Check for working C compiler: /home/tzion/.espressif/tools/xtensa-esp32s3-elf/esp-12.2.0_20230208/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /home/tzion/.espressif/tools/xtensa-esp32s3-elf/esp-12.2.0_20230208/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-g++
+-- Check for working CXX compiler: /home/tzion/.espressif/tools/xtensa-esp32s3-elf/esp-12.2.0_20230208/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-g++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Building ESP-IDF components for target esp32s3
+-- Project sdkconfig file /home/tzion/Projects/cyclone/components/icm20608_driver/example/sdkconfig
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of time_t
+-- Check size of time_t - done
+-- Found Python3: /home/tzion/.espressif/python_env/idf5.1_py3.8_env/bin/python (found version "3.8.10") found components: Interpreter 
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
+-- App "icm_20608" version: 22d07a8-dirty
+-- Adding linker script /home/tzion/Projects/cyclone/components/icm20608_driver/example/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/tzion/esp/esp-idf/components/esp_system/ld/esp32s3/sections.ld.in
+-- Adding linker script /home/tzion/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
+-- Adding linker script /home/tzion/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
+-- Adding linker script /home/tzion/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
+-- Adding linker script /home/tzion/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
+-- Adding linker script /home/tzion/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.version.ld
+-- Adding linker script /home/tzion/esp/esp-idf/components/soc/esp32s3/ld/esp32s3.peripherals.ld
+-- Components: app_update bootloader bootloader_support cxx driver efuse esp_app_format esp_common esp_hw_support esp_mm esp_partition esp_pm esp_ringbuf esp_rom esp_system esp_timer esptool_py freertos hal heap i2c_helper log main mbedtls newlib partition_table pthread soc spi_flash xtensa
+-- Component paths: /home/tzion/esp/esp-idf/components/app_update /home/tzion/esp/esp-idf/components/bootloader /home/tzion/esp/esp-idf/components/bootloader_support /home/tzion/esp/esp-idf/components/cxx /home/tzion/esp/esp-idf/components/driver /home/tzion/esp/esp-idf/components/efuse /home/tzion/esp/esp-idf/components/esp_app_format /home/tzion/esp/esp-idf/components/esp_common /home/tzion/esp/esp-idf/components/esp_hw_support /home/tzion/esp/esp-idf/components/esp_mm /home/tzion/esp/esp-idf/components/esp_partition /home/tzion/esp/esp-idf/components/esp_pm /home/tzion/esp/esp-idf/components/esp_ringbuf /home/tzion/esp/esp-idf/components/esp_rom /home/tzion/esp/esp-idf/components/esp_system /home/tzion/esp/esp-idf/components/esp_timer /home/tzion/esp/esp-idf/components/esptool_py /home/tzion/esp/esp-idf/components/freertos /home/tzion/esp/esp-idf/components/hal /home/tzion/esp/esp-idf/components/heap /home/tzion/Projects/cyclone/components/i2c_helper /home/tzion/esp/esp-idf/components/log /home/tzion/Projects/cyclone/components/icm20608_driver/example/main /home/tzion/esp/esp-idf/components/mbedtls /home/tzion/esp/esp-idf/components/newlib /home/tzion/esp/esp-idf/components/partition_table /home/tzion/esp/esp-idf/components/pthread /home/tzion/esp/esp-idf/components/soc /home/tzion/esp/esp-idf/components/spi_flash /home/tzion/esp/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/tzion/Projects/cyclone/components/icm20608_driver/example/build

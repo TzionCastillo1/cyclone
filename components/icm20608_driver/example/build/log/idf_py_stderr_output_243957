@@ -1,0 +1,9 @@
+CMake Error at /home/tzion/esp/esp-idf/tools/cmake/build.cmake:266 (message):
+  Failed to resolve component 'i2c_helper'.
+Call Stack (most recent call first):
+  /home/tzion/esp/esp-idf/tools/cmake/build.cmake:302 (__build_resolve_and_add_req)
+  /home/tzion/esp/esp-idf/tools/cmake/build.cmake:595 (__build_expand_requirements)
+  /home/tzion/esp/esp-idf/tools/cmake/project.cmake:547 (idf_build_process)
+  CMakeLists.txt:7 (project)
+
+

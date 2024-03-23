@@ -1,0 +1,15 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /home/tzion/Projects/cyclone/components/icm20608_driver/example/build/bootloader/esp-idf/esptool_py && /home/tzion/.espressif/python_env/idf5.1_py3.8_env/bin/python /home/tzion/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/tzion/Projects/cyclone/components/icm20608_driver/example/build/bootloader/bootloader.bin
+Bootloader binary size 0x51c0 bytes. 0x2e40 bytes (36%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[3/7] Linking C static library esp-idf/main/libmain.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable icm_20608.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /home/tzion/Projects/cyclone/components/icm20608_driver/example/build/icm_20608.bin
+[7/7] cd /home/tzion/Projects/cyclone/components/icm20608_driver/example/build/esp-idf/esptool_py && /home/tzion/.espressif/python_env/idf5.1_py3.8_env/bin/python /home/tzion/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/tzion/Projects/cyclone/components/icm20608_driver/example/build/partition_table/partition-table.bin /home/tzion/Projects/cyclone/components/icm20608_driver/example/build/icm_20608.bin
+icm_20608.bin binary size 0x366a0 bytes. Smallest app partition is 0x100000 bytes. 0xc9960 bytes (79%) free.
