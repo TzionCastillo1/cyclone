@@ -57,15 +57,19 @@ void icm20608_get_motion_raw(imu_config_t* config, int16_t gyro_readings[3], int
 }
 
 
-void icm20608_get_motion_scaled(imu_config_t* config, float gyro_readings[3], float acc_readings[3])
+void icm20608_get_motion_scaled(imu_config_t* config, imu_values_t* imu_values)
 {
 	int16_t gyro_readings_raw[3];
 	int16_t acc_readings_raw[3];
 	icm20608_get_motion_raw(config, gyro_readings_raw, acc_readings_raw);
-	for (int item = 0; item < 3; item++)
-		gyro_readings[item] = gyro_readings_raw[item] * config->gyro_scale_factor;
 
-	for (int item = 0; item < 3; item++)
-		acc_readings[item] = acc_readings_raw[item] * config->acc_scale_factor;
+	/* Process and store gyroscope readings*/
+	imu_values->gyro_x = gyro_readings_raw[0] * config->gyro_scale_factor;
+	imu_values->gyro_y = gyro_readings_raw[1] * config->gyro_scale_factor;
+	imu_values->gyro_z = gyro_readings_raw[2] * config->gyro_scale_factor;
 
+	/* Process and store accelerometer readings*/
+	imu_values->acc_x = acc_readings_raw[0] * config->acc_scale_factor;
+	imu_values->acc_y = acc_readings_raw[1] * config->acc_scale_factor;
+	imu_values->acc_z = acc_readings_raw[2] * config->acc_scale_factor;
 }

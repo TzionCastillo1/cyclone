@@ -1,4 +1,6 @@
 #include "stdint.h"
+#include "stdio.h"
+#include "string.h"
 
 //#include "driver/i2c.h"
 #include "esp_log.h"
@@ -7,117 +9,126 @@
 #include "freertos/semphr.h"
 #include "freertos/timers.h"
 
-#include "mat_utils.h"
-#include "ekf_imu.h"
-//#include "i2c_helper.h"
-//#include "icm20608_driver.h"
-#include "bdc_motor.h"
+#include "i2c_helper.h"
+#include "icm20608_driver.h"
 
 const char* TAG = "Cyclone";
+#define LOG_LOCAL_LEVEL ESP_LOG_DEBUG
 
-#define BDC_MCPWM_TIMER_RESOLUTION_HZ 10000000 // 10MHz
-#define BDC_MCPWM_FREQ_HZ 25000 // 25kHz
-#define BDC_MCPWM_DUTY_TICK_MAX (BDC_MCPWM_TIMER_RESOLUTION_HZ / BDC_MCPWM_FREQ_HZ)
-#define BDC_MCPWM_MOTOR_A 4
-#define BDC_MCPWM_MOTOR_B 5
-#define BDC_MCPWM_MOTOR_C 6
-#define BDC_MCPWM_MOTOR_D 7
+#define configTICK_RATE_HZ 100
 
-#define BDC_PID_LOOP_PERIOD_MS 10
+#define DEBUG_STACK_SIZE 2048
+#define IMU_STACK_SIZE 2048
+
+/*** Queue Struct ***/
+typedef struct{
+	void* pData;
+	uint8_t usDataID;
+} xQueueData_t;
+
+/*** Task Queues ***/
+QueueHandle_t xDebug_task_queue;
+
+/*** Setup Functions***/
+void init_i2c()
+{
+	i2c_config_t conf = {
+		.mode = I2C_MODE_MASTER,
+		.sda_io_num = 10,
+		.scl_io_num = 11,
+		.sda_pullup_en = GPIO_PULLUP_DISABLE,
+		.scl_pullup_en = GPIO_PULLUP_DISABLE,
+		.clk_flags = 0
+	};
+
+	conf.master.clk_speed = 400000;
+	ESP_ERROR_CHECK(i2c_param_config(I2C_NUM_0, &conf));
+	ESP_ERROR_CHECK(i2c_driver_install(I2C_NUM_0, I2C_MODE_MASTER, 0, 0, 0));
+}
+
+/*** Task to periodically check for MAVLink messages ***/
+void vMAVLink_read_task(void* pvParameters)
+{
+
+	for(;;)
+	{
+
+	}
+	vTaskDelete(NULL);
+}
+
+/*** Task to periodically read from IMU ***/
+/*** TODO: This task will be converted into the EKF task*/
+static imu_config_t imu_config;
+void vIMU_Read_Task(void *pvParameters )
+{
+	imu_config_t* imu_config_1 = (imu_config_t*) pvParameters;
+
+	TickType_t xLastWakeTime;
+	const TickType_t xTimeIncrement = pdMS_TO_TICKS(10);
+
+	//Initialize the xLastWakeTime variable with the current time
+	xLastWakeTime = xTaskGetTickCount();
+
+	imu_values_t imu_current_values;
+	BaseType_t xStatus;
+
+	xQueueData_t imu_data;
+	imu_data.usDataID = 0x01; //TODO: define these message ID's somewhere
+	for(;;)
+	{
+		icm20608_get_motion_scaled(imu_config_1, &imu_current_values);
+		imu_data.pData = (void*) &imu_current_values;
+		xStatus = xQueueSendToBack(xDebug_task_queue, &imu_data, 0);
+
+		xTaskDelayUntil(&xLastWakeTime, xTimeIncrement);
+	}
+	vTaskDelete(NULL);
+}
+
+/*** Task to periodically print debug statements ***/
+
+void vDebug_Queue_read_Task(void *pvParameters)
+{
+	TickType_t xLastWakeTime;
+	const TickType_t xTimeIncrement = pdMS_TO_TICKS(10);
+
+	BaseType_t xStatus;
+	const TickType_t xTicksToWait = pdMS_TO_TICKS(100);
+
+	xQueueData_t imu_data;
+	imu_values_t imu_values;
+
+	//Initialize the xLastWakeTime variable with the current time
+	xLastWakeTime = xTaskGetTickCount();
+	for(;;)
+	{
+		xStatus = xQueueReceive(xDebug_task_queue, &imu_data, xTicksToWait);
+		if(xStatus == pdPASS)
+		{
+			memcpy((void*) &imu_values, (void*) imu_data.pData, sizeof(imu_values_t));
+			imu_values = (imu_values_t) imu_values;
+			ESP_LOGI(TAG, "Received: %f", imu_values.acc_x);
+		}
+		else
+		{
+			//ESP_LOGI(TAG, "Received nothing from the Queue.");
+		}
+		xTaskDelayUntil(&xLastWakeTime, xTimeIncrement);
+	}
+	vTaskDelete(NULL);
+}
 
 void app_main(void)
 {
-	/* MOTOR A */
-	ESP_LOGI(TAG, "Create DC Motor A ");
-	bdc_motor_config_t motor_A_config = {
-		.pwm_freq_hz = BDC_MCPWM_FREQ_HZ,
-		.pwma_gpio_num = BDC_MCPWM_MOTOR_A,
-	};
-	bdc_motor_mcpwm_config_t mcpwm_config = {
-		.group_id = 0,
-		.resolution_hz = BDC_MCPWM_TIMER_RESOLUTION_HZ,
-	};
+	xDebug_task_queue = xQueueCreate(5, sizeof(imu_values_t));
 
-	bdc_motor_handle_t motor_A = NULL;
-	ESP_ERROR_CHECK(bdc_motor_new_mcpwm_device(&motor_A_config, &mcpwm_config, &motor_A));
+	TaskHandle_t xDebug_Handle = NULL;
+	xTaskCreate(vDebug_Queue_read_Task, "DEBUG", DEBUG_STACK_SIZE, NULL, 2, &xDebug_Handle);
 
-	ESP_ERROR_CHECK(bdc_motor_enable(motor_A));
+	init_i2c();
+	icm20608_init(&imu_config, I2C_NUM_0);
+	TaskHandle_t xIMU_Handle = NULL;
+	xTaskCreate(vIMU_Read_Task, "IMU", IMU_STACK_SIZE, &imu_config, 1, &xIMU_Handle);
 
-	ESP_LOGI(TAG, "Start motor A");
-	bdc_motor_set_speed(motor_A, 100);
-	vTaskDelay(pdMS_TO_TICKS(1000));
-	ESP_LOGI(TAG, "Stop motor A");
-	bdc_motor_set_speed(motor_A, 0);
-
-	/* MOTOR B */
-	ESP_LOGI(TAG, "Create DC Motor B");
-	bdc_motor_config_t motor_B_config = {
-		.pwm_freq_hz = BDC_MCPWM_FREQ_HZ,
-		.pwma_gpio_num = BDC_MCPWM_MOTOR_B,
-	};
-
-	bdc_motor_handle_t motor_B = NULL;
-	ESP_ERROR_CHECK(bdc_motor_new_mcpwm_device(&motor_B_config, &mcpwm_config, &motor_B));
-
-	ESP_ERROR_CHECK(bdc_motor_enable(motor_B));
-
-	ESP_LOGI(TAG, "Start motor B");
-	bdc_motor_set_speed(motor_B, 100);
-	vTaskDelay(pdMS_TO_TICKS(1000));
-	ESP_LOGI(TAG, "Stop motor B");
-	bdc_motor_set_speed(motor_B, 0);
-
-	/* MOTOR C */
-	ESP_LOGI(TAG, "Create DC Motor C");
-	bdc_motor_config_t motor_C_config = {
-		.pwm_freq_hz = BDC_MCPWM_FREQ_HZ,
-		.pwma_gpio_num = BDC_MCPWM_MOTOR_C,
-	};
-
-	bdc_motor_handle_t motor_C = NULL;
-	ESP_ERROR_CHECK(bdc_motor_new_mcpwm_device(&motor_C_config, &mcpwm_config, &motor_C));
-
-	ESP_ERROR_CHECK(bdc_motor_enable(motor_C));
-
-	ESP_LOGI(TAG, "Start motor C");
-	bdc_motor_set_speed(motor_C, 100);
-	vTaskDelay(pdMS_TO_TICKS(1000));
-	ESP_LOGI(TAG, "Stop motor C");
-	bdc_motor_set_speed(motor_C, 0);
-
-	/* MOTOR D */
-	bdc_motor_mcpwm_config_t mcpwm_D_config = {
-		.group_id = 1,
-		.resolution_hz = BDC_MCPWM_TIMER_RESOLUTION_HZ,
-	};
-
-	ESP_LOGI(TAG, "Create DC Motor D");
-	bdc_motor_config_t motor_D_config = {
-		.pwm_freq_hz = BDC_MCPWM_FREQ_HZ,
-		.pwma_gpio_num = BDC_MCPWM_MOTOR_D,
-	};
-
-	bdc_motor_handle_t motor_D = NULL;
-	ESP_ERROR_CHECK(bdc_motor_new_mcpwm_device(&motor_D_config, &mcpwm_D_config, &motor_D));
-
-	ESP_ERROR_CHECK(bdc_motor_enable(motor_D));
-
-	ESP_LOGI(TAG, "Start motor D");
-	bdc_motor_set_speed(motor_D, 100);
-	vTaskDelay(pdMS_TO_TICKS(1000));
-	ESP_LOGI(TAG, "Stop motor D");
-	bdc_motor_set_speed(motor_D, 0);
-
-	ESP_LOGI(TAG, "All motor test");
-	bdc_motor_set_speed(motor_A, 200);
-	bdc_motor_set_speed(motor_B, 200);
-	bdc_motor_set_speed(motor_C, 200);
-	bdc_motor_set_speed(motor_D, 200);
-	vTaskDelay(pdMS_TO_TICKS(1000));
-	bdc_motor_set_speed(motor_A, 0);
-	bdc_motor_set_speed(motor_B, 0);
-	bdc_motor_set_speed(motor_C, 0);
-	bdc_motor_set_speed(motor_D, 0);
 }
-
-

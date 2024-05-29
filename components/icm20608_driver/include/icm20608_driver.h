@@ -55,12 +55,22 @@ typedef struct
 
 } imu_config_t;
 
+typedef struct
+{
+	float gyro_x;
+	float gyro_y;
+	float gyro_z;
+	float acc_x;
+	float acc_y;
+	float acc_z;
+} imu_values_t;
+
 
 void icm20608_init(imu_config_t* imu_config, uint8_t i2c_port);
 
 uint8_t icm20608_whoami(imu_config_t* imu_config);
 
-void icm20608_get_motion_scaled(imu_config_t* imu_config, float gyro_readings[3], float acc_readings[3]);
+void icm20608_get_motion_scaled(imu_config_t* imu_config, imu_values_t* imu_values);
 
 void icm20608_get_motion_raw(imu_config_t* imu_config, int16_t gyro_readings[3], int16_t acc_readings[3]);
 

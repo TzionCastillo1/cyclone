@@ -1,3 +1,6 @@
 [submodule "components/vl53l1x_driver"]
 	path = components/vl53l1x_driver
 	url = git@github.com:TzionCastillo1/vl53l1x_esp_idf_component.git
+[submodule "components/vl53l1x_espidf_component"]
+	path = components/vl53l1x_espidf_component
+	url = git@github.com:TzionCastillo1/vl53l1x_espidf_component.git
